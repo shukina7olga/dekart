@@ -1,0 +1,14 @@
+@import 'fonts.css';
+@import 'normalize.css';
+@import 'interface.css';
+
+
+@import 'header.css';
+@import 'footer.css';
+
+
+@import 'section_figures.css';
+@import 'section_consult.css';
+@import 'section_advantages.css';
+@import 'section_ordering.css';
+@import 'section_services.css';

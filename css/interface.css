@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Aeonik Pro Regular';
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+
+.container {
+    max-width: 1480px;
+    width: 95%;
+    margin: 0 auto;    
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+input, select, textarea {
+    outline: none;
+}
+
+select {
+    cursor: pointer;
+    appearance: none;
+    color: #25292d;
+    background: #ffffff url(../img/select-arrow.svg) no-repeat right;
+    background-position-y: 35px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+
+.btn-base {
+    display: inline-block;
+    font-size: 14px;
+    padding: 15px 40px;
+    border-radius: 21px;
+    color: #3aae2a;
+    text-transform: uppercase;
+}
+
+.btn-base--white {
+    background-color: #ffffff;
+}
+
+.btn-base--black {
+    background-color: #0a0e12;
+}
+
+.btn-base--black:hover {
+    background-color: #3aae2a;
+    color: #ffffff;  
+}
+
+.btn-base--border {
+    background-color: transparent;
+    border: 1px solid #3aae2a;
+}
+
+.btn-base--border:hover {
+    background-color: #3aae2a;
+    color: #ffffff;
+}
+
+
+.small-title {
+    text-transform: uppercase;
+    color: #3aae2a;
+    padding-bottom: 40px;
+}
+
+
+.text--bold {
+    font-family: 'Aeonik Pro Bold';
+}
+
+.text--medium {
+    font-family: 'Aeonik Pro Medium';
+}
+
+h1 { /* 60 */
+    font-family: 'Aeonik Pro Medium';
+    font-size: calc(30px + 30*(100vw / 1480));
+    line-height: 160%;
+}
+
+h2 { /* 48 */
+    font-family: 'Aeonik Pro Medium';
+    font-size: calc(26px + 22*(100vw / 1480));
+}
+
+h3 { /* 30 */
+    font-family: 'Aeonik Pro Bold';
+    font-size: calc(20px + 10*(100vw / 1480));
+}
+
+.text-22 {
+    font-size: calc(18px + 4*(100vw / 1480));
+    line-height: 140%;
+}
+
+.text-18 {
+    font-size: calc(14px + 4*(100vw / 1480));
+    line-height: 140%;
+}
+
+.text-15 {
+    font-family: 'Aeonik Pro Medium';
+    font-size: calc(12px + 3*(100vw / 1480));
+    line-height: 140%;
+}
+
+.text-14 {
+    font-family: 'Aeonik Pro Medium';
+    font-size: calc(11px + 3*(100vw / 1480));
+    line-height: 140%;
+}
+
+.text-30 {
+    font-family: 'Aeonik Pro Bold';
+    font-size: calc(24px + 6*(100vw / 1480));
+    line-height: 160%;
+}
+
+.text-36 {
+    font-family: 'Aeonik Pro Bold';
+    font-size: calc(24px + 12*(100vw / 1480));
+    line-height: 160%;
+}
+
+.text-50 {
+    font-size: calc(25px + 25*(100vw / 1480));
+}
+
+.text-60 {
+    font-size: calc(30px + 30*(100vw / 1480));
+}
+
+.text-120 {
+    font-size: calc(60px + 60*(100vw / 1480));
+}
+
+.text-130 {
+    font-size: calc(65px + 65*(100vw / 1480));
+}
+
+
+@media (max-width: 1440px) { 
+
+}
+
+
+@media (max-width: 768px) { 
+    .small-title {
+        padding-bottom: 20px;
+    }
+
+    h1 {
+        font-size: calc(28px + (32+32*0.7)*((100vw - 320px) / 1480));
+    }
+    
+    h2 {
+        font-size: calc(26px + (22+22*0.7)*((100vw - 320px) / 1480));
+    }
+    
+    h3 {
+        font-size: calc(20px + (10+10*0.7)*((100vw - 320px) / 1480));
+    }
+    
+    .text-22 {
+        font-size: calc(18px + (4+4*0.7)*((100vw - 320px) / 1480));
+    }
+    
+    .text-18 {
+        font-size: calc(14px + (4+4*0.7)*((100vw - 320px) / 1480));
+    }
+    
+    .text-15 {
+        font-size: calc(12px + (3+3*0.7)*((100vw - 320px) / 1480));
+    }
+    
+    .text-14 {
+        font-size: calc(11px + (3+3*0.7)*((100vw - 320px) / 1480));
+    }
+    
+    .text-36 {
+        font-size: calc(24px + (12+12*0.7)*((100vw - 320px) / 1480));
+    }
+    
+    .text-50 {
+        font-size: calc(25px + (25+25*0.7)*((100vw - 320px) / 1480));
+    }
+
+    .text-60 {
+        font-size: calc(30px + (30+30*0.7)*((100vw - 320px) / 1480));
+    }
+    
+    .text-120 {
+        font-size: calc(60px + (60+60*0.7)*((100vw - 320px) / 1480));
+    }
+    
+    .text-130 {
+        font-size: calc(65px + (65+65*0.7)*((100vw - 320px) / 1480));
+    }
+}
