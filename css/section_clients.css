@@ -1,0 +1,63 @@
+.logo {
+    padding-top: 3.3%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: 20px;
+}
+
+.logo-box {
+    animation: scroll 20s linear infinite;
+    flex-shrink: 0;
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    min-width: 100%;
+}
+
+.logo__item {
+    /* flex: 0 0 auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    transition: all 0.1s ease-in-out;
+    max-height: 100px;
+}
+
+
+@keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - 20px));
+    }
+}
+
+
+.clients-figure {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    align-items: baseline;
+    white-space: nowrap;
+}
+
+.clients__text {
+    text-align: center;
+    color: #3aae2a;
+}
+
+
+.running {
+    /* opacity: 1;
+    transition: opacity 1s ease-in-out; */
+    display: flex;
+}
+
+/* .running span {
+    margin-left: -30px;
+} */
+

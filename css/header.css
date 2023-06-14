@@ -1,3 +1,10 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 15px;
+    z-index: 5;
+}
+
 .header__box {
     background-color: #0a0e12;
     border-radius: 34px;
@@ -9,6 +16,7 @@
 
 .header__menu {
     width: 35%;
+    font-size: 15px;
 }
 
 .header__logo-box {
@@ -48,6 +56,7 @@
 .header__contacts {
     display: flex;
     align-items: center;
+    font-size: 14px;
 }
 
 .header__tel {
@@ -75,10 +84,115 @@
     display: none;
 }
 
+.burger {
+    display: none;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+    width: 25px;
+    height: 18px;
+}
 
+.burger span {
+    background-color: #fff;
+    height: 2px;
+    width: 100%;
+    transform: scale(1);
+}
+
+.burger::before, .burger::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    transition: all 0.3s ease 0s;
+}
+
+.burger::before {
+    top: 0;
+}
+
+.burger::after {
+    bottom: 0;
+}
+
+.burger.active span {
+    transform: scale(0);
+}
+
+.burger.active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+    background-color: #7d7e80;
+}
+
+.burger.active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+    background-color: #7d7e80;
+}
+
+.header__icons {
+    display: none;
+    padding-top: 15px;
+}
+
+.header__icons a {
+    display: inline-block;
+    margin-right: 20px;
+}
 
 @media (max-width: 1024px) {
+    .burger {
+        display: flex;
+        position: absolute;
+        right: 5%;
+        top: 27px;
+    }
+
+    .header__btn {
+        border: 1px solid #3aae2a;
+        background-color: transparent;
+        padding: 15px 40px;
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 35px;
+    }
+
+    .header.open {
+        top: 0;
+        background-color: #0a0e12;
+    }
+    
+    .header__menu {
+        display: none;
+    }
+
+    .header__contacts {
+        display: none;
+    }
+
+
+    .header.open .header__menu {
+        display: block;
+        padding-top: 30px;
+        font-size: 20px;
+    }
+
+    .header__menu a {
+        text-transform: none;
+    }
+
+    .header.open .header__contacts {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding-bottom: 50px;
+    }
+
     .header__box {
+        position: relative;
         flex-direction: column;
         align-items: flex-start;
     }
@@ -88,16 +202,23 @@
         align-items: flex-start;
     }
 
-    .header__contacts {
-        flex-direction: column-reverse;
+    .header__menu li {
+        padding-bottom: 20px;
     }
 
     .header__mail {
         display: block;
         color: #ffffff;
+        font-size: 16px;
+        padding-top: 15px;
     }
 
     .header__tel {
         margin-right: 0;
+        font-size: 16px;
+    }
+
+    .header__icons {
+        display: block;
     }
 }
