@@ -161,7 +161,7 @@
     }
 
     .header.open {
-        top: 0;
+        top: 0 !important;
         background-color: #0a0e12;
     }
     
