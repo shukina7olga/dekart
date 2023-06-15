@@ -21,6 +21,11 @@
     margin: 0 10px;
 }
 
+
+.practice {
+    padding-top: 100px;
+}
+
 .practice__top {
     display: flex;
     align-items: flex-end;
@@ -68,12 +73,28 @@
 
 .slider h3 {
     color: #0a0e12;
+    padding: 7.5% 0;
 }
 
 .slider h3 a {
     color: #0a0e12;
 }
 
+@media (max-width: 1024px) {
+    .slider__item img {
+        height: 290px;
+    }
+}
+
+@media (max-width: 768px) {
+    .practice {
+        padding-top: 50px;
+    }
+
+    .slider__item img {
+        height: 260px;
+    }
+}
 
 
 @media (max-width: 475px) {

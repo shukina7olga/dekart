@@ -1,5 +1,5 @@
 .main {
-    /* height: 100vh; */
+   position: relative;
 }
 
 .main__title {
@@ -63,7 +63,15 @@
 }
 
 
-
+.main__down-btn {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 30px;
+    cursor: pointer;
+}
 
 @media (max-width: 1400px) {
     .main-slider .slick-arrow.slick-prev {
@@ -98,5 +106,9 @@
 @media (max-width: 768px) {
     .main__title {
         width: 100%;
+    }
+
+    .main__down-btn {
+        display: none;
     }
 }
