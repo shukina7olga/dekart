@@ -1,0 +1,142 @@
+.team {
+    padding-bottom: 140px;
+    color: #0a0e12;
+}
+
+.team h2 {
+    text-align: center;
+    color: #0a0e12;
+    padding-bottom: 40px;
+}
+
+.team__box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 24%);
+    width: 100%;
+    justify-content: space-between;
+    row-gap: 58px;
+}
+
+.team__name {
+    font-weight: 700;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+.team__item img {
+    object-fit: cover;
+    border-radius: 10px;
+    aspect-ratio: 1;
+}
+
+.service-picture.service-picture--team {
+    padding-bottom: 0;
+}
+
+.advantages.advantages--company {
+    padding-top: 130px;
+    padding-bottom: 119px;
+}
+
+
+
+
+.company-block {
+    padding-top: 86px;
+}
+
+.company-block__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.company-block__img, .company-block__content {
+    width: 49%;
+}
+
+.company-block__content {
+    padding-right: 5%;
+}
+
+.company-block__img img {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.company-block__content p {
+    padding-top: 26px;
+    color: #25292d;
+}
+
+.company-block__content h2 {
+    color: #0a0e12;
+}
+
+@media (max-width: 1024px) {
+    .team {
+        padding-bottom: 100px;
+    }
+
+    .team__box {
+        grid-template-columns: repeat(auto-fill, 32%);
+        row-gap: 48px;
+    }
+
+    .advantages.advantages--company {
+        padding-top: 110px;
+        padding-bottom: 100px;
+    }
+
+
+    .company-block {
+        padding-top: 40px;
+    }
+}
+
+@media (max-width:768px) {
+    .team {
+        padding-bottom: 50px;
+    }
+
+    .team__box {
+        grid-template-columns: repeat(auto-fill, 48%);
+        row-gap: 35px;
+    }
+
+    .team__name {
+        padding-top: 20px;
+    }
+
+    .advantages.advantages--company {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+    
+
+    .company-block {
+        padding-top: 0;
+    }
+
+    .company-block__box {
+        flex-direction: column;
+    }
+
+    .company-block__img, .company-block__content {
+        width: 100%;
+    }
+
+    .company-block__content p {
+        padding-top: 15px;
+    }
+
+    .company-block__img {
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    .team__box {
+        grid-template-columns: repeat(auto-fill, 100%);
+    }
+}

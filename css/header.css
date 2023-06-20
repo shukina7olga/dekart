@@ -23,6 +23,10 @@
     padding: 14px 0;
 }
 
+.header__logo-box img {
+    max-width: 221px;
+}
+
 .header__menu ul {
     display: flex;
     align-items: center;

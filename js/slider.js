@@ -18,7 +18,7 @@ $(".document").ready(function() {
               }  
             },
             {
-                breakpoint: 425,
+                breakpoint: 625,
                 settings: {
                     slidesToShow: 1,
                 }  
@@ -63,6 +63,27 @@ $(".document").ready(function() {
               }  
             }
         ] 
+    });
+
+
+    $(".slider-comment").slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 1, 
+        // autoplay: true,
+        // autoplaySpeed: 2000,
+        // variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }  
+            }
+        ]  
     });
     
  

@@ -62,6 +62,11 @@
         padding-top: 10px;
         width: 100%;
     }
+
+    .advantages__item svg {
+        width: 200px; 
+        height: 200px; 
+    }
 }
 
 
@@ -91,6 +96,12 @@
     .advantages__text {
         width: 70%;
     }
+
+
+    .advantages__item svg {
+        width: 160px; 
+        height: 160px; 
+    }
 }
 
 
@@ -105,5 +116,11 @@
 
     .advantages__text {
         width: 85%;
+    }
+
+
+    .advantages__item svg {
+        width: 140px; 
+        height: 140px; 
     }
 }

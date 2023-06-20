@@ -16,3 +16,13 @@
 @import 'section_clients.css';
 @import 'section_practice.css';
 @import 'section_main.css';
+@import 'section_portfolio.css';
+@import 'section_comment.css';
+@import 'section_discount.css';
+@import 'section_map.css';
+
+
+@import 'page_project.css';
+@import 'page_services.css';
+@import 'page_service.css';
+@import 'page_company.css';

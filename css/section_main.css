@@ -111,4 +111,8 @@
     .main__down-btn {
         display: none;
     }
+
+    .slider__counter {
+        display: none;
+    }
 }

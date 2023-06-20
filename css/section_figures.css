@@ -26,11 +26,19 @@
     color: #3aae2a;
 }
 
+.figures.figures--service {
+    padding-top: 100px;
+}
+
 
 @media (max-width: 1024px) {
     .figures {
         padding-top: 110px;
         padding-bottom: 90px;
+    }
+
+    .figures.figures--service {
+        padding-top: 90px;
     }
 }
 
@@ -44,6 +52,10 @@
     .figures__item {
         width: 44%;
         margin-bottom: 20px;
+    }
+
+    .figures.figures--service {
+        padding-top: 40px;
     }
 }
 

@@ -3,9 +3,9 @@ ymaps.ready(init);
 function init () {
     var myMap = new ymaps.Map("map", {
         // Центр карты, указываем коордианты. если центр как в макете center:[55.758438, 37.6]
-        center:[55.758438, 37.64803],
-        // Масштаб, тут все просто
-         zoom: 11,
+        center: [55.681600, 37.865220],
+        // Масштаб
+         zoom: 17,
         // Отключаем все элементы управления
         controls: []
     }); 
@@ -15,17 +15,17 @@ function init () {
 
     
     // Наша метка, указываем коордианты
-    myGeoObjects = new ymaps.Placemark([55.758438, 37.741019],{
+    myGeoObjects = new ymaps.Placemark([55.681600, 37.865220],{
         balloonContentBody: '',
         },{
         iconLayout: 'default#image',
         // Путь до нашей картинки
-        iconImageHref: '/img/card-marker.png', 
+        iconImageHref: './img/card-marker.png', 
         // Размер по ширине и высоте
-        // iconImageSize: [70, 70],
+        iconImageSize: [210, 60],
         // Смещение левого верхнего угла иконки относительно
         // её «ножки» (точки привязки).
-        // iconImageOffset: [-35, -35]
+        iconImageOffset: [-35, -45],
     });
                 
     var clusterer = new ymaps.Clusterer({
@@ -39,3 +39,4 @@ function init () {
     // myMap.behaviors.disable('scrollZoom');
 
 }
+

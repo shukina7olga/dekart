@@ -7,14 +7,3 @@ btn.addEventListener('click', () => window.scrollTo({
 
 
 
-function menu() {
-  const header = document.querySelector(".header");
-  if (window.pageYOffset == 0) {
-    header.style.top = "15px";
-  } else {
-    header.style.top = "0";
-  }
-  setTimeout(menu, 0);
-}
-
-menu();

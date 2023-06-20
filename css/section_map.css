@@ -1,0 +1,152 @@
+.contact-title {
+    padding-top: 219px;
+    padding-bottom: 132px;
+}
+
+.contact-title h1 {
+    width: 50%;
+    color: #0a0e12;
+}
+
+
+
+.map {
+    padding-bottom: 140px;
+}
+
+.map__box {
+    display: flex;
+}
+
+.map__card, .map__inf {
+    width: 50%;
+}
+
+.map__inf {
+    padding: 8%;
+}
+
+.map__inf-link {
+    display: block;
+    color: #0a0e12;
+    padding-bottom: 10px;
+}
+
+.map__inf-adress {
+    padding-top: 30px;
+    width: 70%;
+    color: #25292d;
+}
+
+.map__inf .btn-base {
+    margin-top: 26px;
+    display: inline-block;
+}
+
+.map__icons {
+    padding-top: 50px;
+}
+
+.map__icons a {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.map__icons svg {
+   width: 42px;
+   height: 42px;
+}
+
+.map__icons svg path {
+    fill: #0a0e12;
+}
+
+.map__icons svg path:hover {
+    fill: #3aae2a;
+}
+
+
+.map__card-base iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.map__card-base {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+[class*="ymaps-2"][class*="-ground-pane"] {
+	filter: grayscale(1);
+	-ms-filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-o-filter: grayscale(1);
+}
+
+
+@media (max-width: 1200px) { 
+    .contact-title {
+        padding-top: 180px;
+        padding-bottom: 80px;
+    }
+
+    .map {
+        padding-bottom: 100px;
+    }
+
+    .map__icons a {
+        margin-right: 35px;
+    }
+}
+
+
+@media (max-width: 768px) { 
+    .contact-title {
+        padding-top: 130px;
+        padding-bottom: 40px;
+    }
+
+    .contact-title  h1 {
+        width: 100%;
+    }
+
+    .map__inf-adress {
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .map__icons {
+        padding-top: 30px;
+    }
+
+    .map__icons a {
+        margin-right: 20px;
+    }
+
+    .map {
+        padding-bottom: 50px;
+    }
+
+    .map__box {
+        flex-direction: column-reverse;
+    }
+
+    .map__card, .map__inf {
+        width: 100%;
+    }
+
+
+    .map__card-base {
+        height: 350px;
+    }
+
+
+    .map__inf {
+        padding-top: 3%;
+        padding-left: 3%;
+    }
+}
