@@ -44,6 +44,7 @@
 ::-moz-placeholder          {color:#25292d;}/* Firefox 19+ */
 :-moz-placeholder           {color:#25292d;}/* Firefox 18- */
 :-ms-input-placeholder      {color:#25292d;}
+:-moz-input-placeholder     {color:#25292d;}
 
 
 @media (max-width: 1024px) {

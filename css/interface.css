@@ -42,6 +42,9 @@ ul {
 
 input, select, textarea {
     outline: none;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
 }
 
 select {
@@ -52,6 +55,27 @@ select {
     background-position-y: 35px;
     -moz-appearance: none;
     -webkit-appearance: none;
+}
+
+::-webkit-input-placeholder {
+    color: #25292d;
+ }
+ :-moz-placeholder { /* Upto Firefox 18, Deprecated in Firefox 19  */
+    color: #25292d; 
+ }
+ ::-moz-placeholder {  /* Firefox 19+ */
+    color: #25292d; 
+ }
+ ::-moz-input-placeholder {  /* Firefox 19+ */
+    color: #25292d; 
+ }
+
+ :-ms-input-placeholder {  
+    color: #25292d; 
+ }
+
+ ::-moz-placeholder, :-moz-placeholder {
+    opacity: 1;
 }
 
 

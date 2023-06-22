@@ -61,15 +61,15 @@
             </h1>
             
             <div class="portfolio__tabs text-14 text--medium">
-                <a class="portfolio__tab active">все проекты</a>
-                <a class="portfolio__tab">ремонт</a>
-                <button class="portfolio__tab">Строительство</button>
-                <a class="portfolio__tab">дизайн</a>
-                <button class="portfolio__tab">проектирование</button>
+                <button class="portfolio__tab all" data-filter="">все проекты</button>
+                <button class="portfolio__tab" data-filter=".repair">ремонт</button>
+                <button class="portfolio__tab" data-filter=".construction">Строительство</button>
+                <button class="portfolio__tab" data-filter=".design">дизайн</button>
+                <button class="portfolio__tab"  data-filter=".planning">проектирование</button>
             </div>
 
-            <div class="portfolio__box active">
-                <div class="portfolio__item">
+            <div class="portfolio__box">
+                <div class="portfolio__item repair">
                     <a href="" class="portfolio__wrap">
                         <img src="./img/portfolio/1.png" alt="">
                         <p class="portfolio__item-title text-30">
@@ -80,7 +80,7 @@
                         <a href="">Ремонт</a>
                     </div>
                 </div>
-                <div class="portfolio__item">
+                <div class="portfolio__item repair construction design">
                     <a href="" class="portfolio__wrap">
                         <img src="./img/portfolio/2.png" alt="">
                         <p class="portfolio__item-title text-30">
@@ -93,7 +93,7 @@
                         <a href="">Ремонт</a>
                     </div>
                 </div>
-                <div class="portfolio__item">
+                <div class="portfolio__item design">
                     <a href="" class="portfolio__wrap">
                         <img src="./img/portfolio/3.png" alt="">
                         <p class="portfolio__item-title text-30">
@@ -104,7 +104,7 @@
                         <a href="">дизайн</a>
                     </div>
                 </div>
-                <div class="portfolio__item">
+                <div class="portfolio__item repair construction">
                     <a href="" class="portfolio__wrap">
                         <img src="./img/portfolio/4.png" alt="">
                         <p class="portfolio__item-title text-30">
@@ -116,7 +116,7 @@
                         <a href="">Строительство</a>
                     </div>
                 </div>
-                <div class="portfolio__item">
+                <div class="portfolio__item construction">
                     <a href="" class="portfolio__wrap">
                         <img src="./img/portfolio/5.png" alt="">
                         <p class="portfolio__item-title text-30">
@@ -127,7 +127,7 @@
                         <a href="">Строительство</a>
                     </div>
                 </div>
-                <div class="portfolio__item">
+                <div class="portfolio__item design repair">
                     <a href="" class="portfolio__wrap">
                         <img src="./img/portfolio/6.png" alt="">
                         <p class="portfolio__item-title text-30">
@@ -139,7 +139,7 @@
                         <a href="">Ремонт</a>
                     </div>
                 </div>
-                <div class="portfolio__item">
+                <div class="portfolio__item repair">
                     <a href="" class="portfolio__wrap">
                         <img src="./img/portfolio/7.png" alt="">
                         <p class="portfolio__item-title text-30">
@@ -150,7 +150,7 @@
                         <a href="">Ремонт</a>
                     </div>
                 </div>
-                <div class="portfolio__item">
+                <div class="portfolio__item construction design">
                     <a href="" class="portfolio__wrap">
                         <img src="./img/portfolio/8.png" alt="">
                         <p class="portfolio__item-title text-30">
@@ -162,7 +162,7 @@
                         <a href="">дизайн</a>
                     </div>
                 </div>
-                <div class="portfolio__item">
+                <div class="portfolio__item design repair">
                     <a href="" class="portfolio__wrap">
                         <img src="./img/portfolio/9.png" alt="">
                         <p class="portfolio__item-title text-30">
@@ -174,7 +174,7 @@
                         <a href="">Ремонт</a>
                     </div>
                 </div>
-                <div class="portfolio__item">
+                <div class="portfolio__item repair">
                     <a href="" class="portfolio__wrap">
                         <img src="./img/portfolio/10.png" alt="">
                         <p class="portfolio__item-title text-30">
@@ -185,7 +185,7 @@
                         <a href="">Ремонт</a>
                     </div>
                 </div>
-                <div class="portfolio__item">
+                <div class="portfolio__item construction">
                     <a href="" class="portfolio__wrap">
                         <img src="./img/portfolio/11.png" alt="">
                         <p class="portfolio__item-title text-30">
@@ -196,7 +196,7 @@
                         <a href="">Строительство</a>
                     </div>
                 </div>
-                <div class="portfolio__item">
+                <div class="portfolio__item design">
                     <a href="" class="portfolio__wrap">
                         <img src="./img/portfolio/12.png" alt="">
                         <p class="portfolio__item-title text-30">
@@ -207,7 +207,7 @@
                         <a href="">дизайн</a>
                     </div>
                 </div>
-                <div class="portfolio__item">
+                <div class="portfolio__item repair">
                     <a href="" class="portfolio__wrap">
                         <img src="./img/portfolio/13.png" alt="">
                         <p class="portfolio__item-title text-30">
@@ -218,7 +218,7 @@
                         <a href="">Ремонт</a>
                     </div>
                 </div>
-                <div class="portfolio__item">
+                <div class="portfolio__item construction">
                     <a href="" class="portfolio__wrap">
                         <img src="./img/portfolio/14.png" alt="">
                         <p class="portfolio__item-title text-30">
@@ -229,7 +229,7 @@
                         <a href="">Строительство</a>
                     </div>
                 </div>
-                <div class="portfolio__item">
+                <div class="portfolio__item design">
                     <a href="" class="portfolio__wrap">
                         <img src="./img/portfolio/15.png" alt="">
                         <p class="portfolio__item-title text-30">
@@ -242,287 +242,6 @@
                 </div>
             </div>
 
-            <div class="portfolio__box">
-                <div class="portfolio__item">
-                    <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/1.png" alt="">
-                        <p class="portfolio__item-title text-30">
-                            Ремонт и дизайн квартиры на Каширском шоссе
-                        </p>
-                    </a>
-                    <div class="portfolio__tegs">
-                        <a href="">Ремонт</a>
-                    </div>
-                </div>
-                <div class="portfolio__item">
-                    <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/2.png" alt="">
-                        <p class="portfolio__item-title text-30">
-                            Дом из газобетона с двумя балконами
-                        </p>                        
-                    </a>
-                    <div class="portfolio__tegs">
-                        <a href="">Строительство</a>
-                        <a href="">дизайн</a>
-                        <a href="">Ремонт</a>
-                    </div>
-                </div>
-                <div class="portfolio__item">
-                    <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/4.png" alt="">
-                        <p class="portfolio__item-title text-30">
-                            3-х комнатная квартира в Люберцах
-                        </p>
-                    </a>
-                    <div class="portfolio__tegs">
-                        <a href="">Ремонт</a>
-                        <a href="">Строительство</a>
-                    </div>
-                </div>
-                <div class="portfolio__item">
-                    <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/6.png" alt="">
-                        <p class="portfolio__item-title text-30">
-                            Ремонт квартиры в Некрасовке
-                        </p>
-                    </a>
-                    <div class="portfolio__tegs">
-                        <a href="">дизайн</a>
-                        <a href="">Ремонт</a>
-                    </div>
-                </div>
-                <div class="portfolio__item">
-                    <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/7.png" alt="">
-                        <p class="portfolio__item-title text-30">
-                            Дизайн 1-комнатной квартиры в ЖК Искра Парк
-                        </p>
-                    </a>
-                    <div class="portfolio__tegs">
-                        <a href="">Ремонт</a>
-                    </div>
-                </div>
-                <div class="portfolio__item">
-                    <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/9.png" alt="">
-                        <p class="portfolio__item-title text-30">
-                            Дизайн гостиной комнаты в частном доме
-                        </p>
-                    </a>
-                    <div class="portfolio__tegs">
-                        <a href="">дизайн</a>
-                        <a href="">Ремонт</a>
-                    </div>
-                </div>
-                <div class="portfolio__item">
-                    <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/10.png" alt="">
-                        <p class="portfolio__item-title text-30">
-                            Дизайн загородного дома в стиле Кантри
-                        </p>
-                    </a>
-                    <div class="portfolio__tegs">
-                        <a href="">Ремонт</a>
-                    </div>
-                </div>
-                <div class="portfolio__item">
-                    <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/13.png" alt="">
-                        <p class="portfolio__item-title text-30">
-                            Дом из газобетона с отделкой облицовочным кирпичом
-                        </p>
-                    </a>
-                    <div class="portfolio__tegs">
-                        <a href="">Ремонт</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio__box">
-                <div class="portfolio__item">
-                    <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/2.png" alt="">
-                        <p class="portfolio__item-title text-30">
-                            Дом из газобетона с двумя балконами
-                        </p>                        
-                    </a>
-                    <div class="portfolio__tegs">
-                        <a href="">Строительство</a>
-                        <a href="">дизайн</a>
-                        <a href="">Ремонт</a>
-                    </div>
-                </div>
-                <div class="portfolio__item">
-                    <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/4.png" alt="">
-                        <p class="portfolio__item-title text-30">
-                            3-х комнатная квартира в Люберцах
-                        </p>
-                    </a>
-                    <div class="portfolio__tegs">
-                        <a href="">Ремонт</a>
-                        <a href="">Строительство</a>
-                    </div>
-                </div>
-                <div class="portfolio__item">
-                    <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/5.png" alt="">
-                        <p class="portfolio__item-title text-30">
-                            Ремонт квартиры в ЖК Пресня Сити
-                        </p>
-                    </a>
-                    <div class="portfolio__tegs">
-                        <a href="">Строительство</a>
-                    </div>
-                </div>
-                <div class="portfolio__item">
-                    <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/8.png" alt="">
-                        <p class="portfolio__item-title text-30">
-                            Строительство ленточного Т-образного фундамента
-                        </p>
-                    </a>
-                    <div class="portfolio__tegs">
-                        <a href="">Строительство</a>
-                        <a href="">дизайн</a>
-                    </div>
-                </div>
-                <div class="portfolio__item">
-                    <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/11.png" alt="">
-                        <p class="portfolio__item-title text-30">
-                            Дом из газобетона с двумя балконами
-                        </p>
-                    </a>
-                    <div class="portfolio__tegs">
-                        <a href="">Строительство</a>
-                    </div>
-                </div>
-                <div class="portfolio__item">
-                    <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/14.png" alt="">
-                        <p class="portfolio__item-title text-30">
-                            Дизайн спальной комнаты в классическом стиле
-                        </p>
-                    </a>
-                    <div class="portfolio__tegs">
-                        <a href="">Строительство</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio__box">
-                <div class="portfolio__item">
-                    <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/2.png" alt="">
-                        <p class="portfolio__item-title text-30">
-                            Дом из газобетона с двумя балконами
-                        </p>                        
-                    </a>
-                    <div class="portfolio__tegs">
-                        <a href="">Строительство</a>
-                        <a href="">дизайн</a>
-                        <a href="">Ремонт</a>
-                    </div>
-                </div>
-                <div class="portfolio__item">
-                    <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/3.png" alt="">
-                        <p class="portfolio__item-title text-30">
-                            Дизайн гостиной комнаты в частном доме
-                        </p>
-                    </a>
-                    <div class="portfolio__tegs">
-                        <a href="">дизайн</a>
-                    </div>
-                </div>
-                <div class="portfolio__item">
-                    <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/6.png" alt="">
-                        <p class="portfolio__item-title text-30">
-                            Ремонт квартиры в Некрасовке
-                        </p>
-                    </a>
-                    <div class="portfolio__tegs">
-                        <a href="">дизайн</a>
-                        <a href="">Ремонт</a>
-                    </div>
-                </div>
-                <div class="portfolio__item">
-                    <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/8.png" alt="">
-                        <p class="portfolio__item-title text-30">
-                            Строительство ленточного Т-образного фундамента
-                        </p>
-                    </a>
-                    <div class="portfolio__tegs">
-                        <a href="">Строительство</a>
-                        <a href="">дизайн</a>
-                    </div>
-                </div>
-                <div class="portfolio__item">
-                    <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/9.png" alt="">
-                        <p class="portfolio__item-title text-30">
-                            Дизайн гостиной комнаты в частном доме
-                        </p>
-                    </a>
-                    <div class="portfolio__tegs">
-                        <a href="">дизайн</a>
-                        <a href="">Ремонт</a>
-                    </div>
-                </div>
-                <div class="portfolio__item">
-                    <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/12.png" alt="">
-                        <p class="portfolio__item-title text-30">
-                            Строительство загородного дома на Киевском шоссе
-                        </p>
-                    </a>
-                    <div class="portfolio__tegs">
-                        <a href="">дизайн</a>
-                    </div>
-                </div>
-                <div class="portfolio__item">
-                    <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/15.png" alt="">
-                        <p class="portfolio__item-title text-30">
-                            Дизайн квартиры в ЖК Эмеральд
-                        </p>
-                    </a>
-                    <div class="portfolio__tegs">
-                        <a href="">дизайн</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio__box">
-                <div class="portfolio__item">
-                    <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/1.png" alt="">
-                        <p class="portfolio__item-title text-30">
-                            Ремонт и дизайн квартиры на Каширском шоссе
-                        </p>
-                    </a>
-                    <div class="portfolio__tegs">
-                        <a href="">проектирование</a>
-                    </div>
-                </div>
-                <div class="portfolio__item">
-                    <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/2.png" alt="">
-                        <p class="portfolio__item-title text-30">
-                            Дом из газобетона с двумя балконами
-                        </p>                        
-                    </a>
-                    <div class="portfolio__tegs">
-                        <a href="">Строительство</a>
-                        <a href="">дизайн</a>
-                        <a href="">Ремонт</a>
-                        <a href="">проектирование</a>
-                    </div>
-                </div>
-            </div>
 
             <div class="portfolio__btns">
                 <a href="" class="btn-base btn-base--border text--medium">консультация</a>
@@ -708,7 +427,9 @@
     <script src="./js/down-btn.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/isotope.min.js"></script>
     <script src="./js/tabs.js"></script>
+    
     
 </body>
 </html>
