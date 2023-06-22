@@ -18,9 +18,10 @@
 }
 
 .portfolio__item  {
-    width: 33%;
+    width: 33.3%;
     padding-top: 60px;
-    padding-right: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
 } 
 
 .portfolio__item img {
@@ -114,7 +115,7 @@
     }
 
     .portfolio__item  {
-        width: 48.7%;
+        width: 50%;
         padding-top: 40px;
     } 
 
