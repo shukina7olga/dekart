@@ -16,6 +16,7 @@
     border: 1px solid #ccd1d3;
     border-radius: 14px;
     padding: 3.4%;
+    padding-bottom: 14px;
 }
 
 .advantages__title {
@@ -24,7 +25,7 @@
 }
 
 .advantages__text {
-    padding-top: 30px;
+    padding-top: 24px;
     color: #25292d; 
     width: 90%;
 }

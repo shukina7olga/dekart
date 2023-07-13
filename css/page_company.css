@@ -25,7 +25,7 @@
 
 .team__item img {
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 14px;
     aspect-ratio: 1;
 }
 
@@ -61,7 +61,7 @@
 
 .company-block__img img {
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 14px;
 }
 
 .company-block__content p {

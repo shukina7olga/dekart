@@ -2,14 +2,14 @@ $(".document").ready(function() {
  
     $(".slider").slick({
         dots: false,
-        arrows: false,
+        arrows: true,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1, 
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
-        // variableWidth: true,
+        variableWidth: true,
         responsive: [
             {
               breakpoint: 1024,
@@ -52,7 +52,7 @@ $(".document").ready(function() {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1, 
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 2700,
         // variableWidth: true,
         responsive: [

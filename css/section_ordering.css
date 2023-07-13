@@ -17,18 +17,23 @@
     width: 50%;
 }
 
-.ordering__box-inf, .ordering__box-form {
-    width: 50%;
+.ordering__box-inf {
+    width: 51%;
+}
+    
+.ordering__box-form {
+    width: 48%;
 }
 
 .ordering__box-form {
-    padding-right: 5%;
+    padding-right: 4.5%;
 }
 
 .ordering__fields {
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
+    margin-top: -25px;
 }
 
 .ordering__fields input, .ordering__fields select {
@@ -37,7 +42,7 @@
     border-right: none;
     border-bottom: 1px solid #ccd1d3;
     padding-right: 1.7rem;
-    padding-top: 1.7rem;
+    padding-top: 2rem;
 }
 
 ::-webkit-input-placeholder {color:#25292d;}
@@ -71,5 +76,9 @@
 
     .ordering__box-inf, .ordering__box-form {
         width: 100%;
+    }
+
+    .ordering__fields {
+        margin-top: 0;
     }
 }

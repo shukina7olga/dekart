@@ -16,7 +16,7 @@
     object-fit: cover;
     height: 100%;
     min-height: 450px;
-    border-radius: 10px;
+    border-radius: 14px;
 }
 
 .service-point h3 {
@@ -47,7 +47,7 @@
 .service-picture img {
     object-fit: cover;
     height: 90vh;
-    border-radius: 10px;
+    border-radius: 14px;
 }
 
 
@@ -114,6 +114,10 @@
 .service-baner {
     padding-top: 160px;
     padding-bottom: 50px;
+}
+
+.service-baner img {
+    border-radius: 14px;
 }
 
 @media (max-width: 1024px) {

@@ -6,16 +6,19 @@ document.querySelector('.burger').addEventListener('click', function() {
 
 function menu() {
     const header = document.querySelector(".header");
+    // if (window.pageYOffset == 0) {
+    //     header.style.top = "20px";
+    //     header.style.display = "block";
+    // } else {
+    //     header.style.display = "none";
+    // }
+
     if (window.pageYOffset == 0) {
-        header.style.top = "15px";
+        header.classList.add('active');
     } else {
-        header.style.top = "0";
+        header.classList.remove('active');
     }
     setTimeout(menu, 0);
   }
   
   menu();
-
-//   header.forEach(element => {
-//     element.style.top = "0";
-//   });

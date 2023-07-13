@@ -3,7 +3,7 @@
 }
 
 .logo {
-    padding-top: 3.3%;
+    padding-top: 4.7%;
     position: relative;
     display: flex;
     overflow: hidden;
@@ -49,6 +49,13 @@
     white-space: nowrap;
 }
 
+.clients-figure span {
+    color: #0a0e12;
+    display: inline-block;
+    margin-right: 7px;
+    line-height: 1;
+}
+
 .clients__text {
     text-align: center;
     color: #3aae2a;
@@ -75,5 +82,9 @@
 @media (max-width: 768px) { 
     .clients {
         padding: 50px 0;
+    }
+
+    .clients-figure span {
+        margin-right: 0;
     }
 }
