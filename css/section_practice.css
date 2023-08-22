@@ -1,19 +1,31 @@
 /* Слайдер */
+
 .slider {
     min-width: 0;
     position: relative;
     width: calc(100vw - (100vw - 1440px) / 1.9);
 }
+
+
 /* Слайдер запущен */
-.slick-slider.slick-initialized{}
+
+.slick-slider.slick-initialized {}
+
+
 /* Слайдер с точками */
-.slick-slider.slick-dotted{}
+
+.slick-slider.slick-dotted {}
+
 
 /* Ограничивающая оболочка */
+
 .slick-list {
     overflow: hidden;
 }
+
+
 /* Лента слайдов */
+
 .slick-track {
     display: flex;
 }
@@ -21,7 +33,6 @@
 .slider .slick-slide {
     margin: 0 14px;
 }
-
 
 .slider .slick-arrow {
     position: absolute;
@@ -31,7 +42,7 @@
     width: 42px;
     height: 42px;
     opacity: 0;
-    border-radius: 30px; 
+    border-radius: 30px;
     background-color: transparent;
     border: 1px solid #383633;
     transition: 0.3s;
@@ -49,7 +60,6 @@
     background-position: center;
 }
 
-
 .slider .slick-arrow.slick-prev:hover {
     border: 1px solid #3aae2a;
     background: url('../img/arrow_left_green.svg') 0 0 / 50% no-repeat;
@@ -61,7 +71,6 @@
     background: url('../img/arrow_right_green.svg') 0 0 / 50% no-repeat;
     background-position: center;
 }
-
 
 .slider__item {
     width: 460px;
@@ -182,11 +191,10 @@
     border: 1px solid #3aae2a;
 }
 
-
 .slider__btn {
-    color: #5a5a5a;
+    color: #7d7e80;
     border-radius: 30px;
-    border: 1px solid #ccd1d3;
+    border: 1px solid #7d7e80;
     background-color: transparent;
     padding: 10px 17px;
     display: inline-block;
@@ -302,11 +310,11 @@
     }
 }
 */
+
 @media (max-width: 1540px) {
     .slider {
         width: 100%;
     }
-
     .slider .slick-arrow.slick-next {
         right: -20px;
         left: unset;
@@ -317,56 +325,45 @@
     .slider__item img {
         height: 290px;
     }
-
     .slider .slick-arrow.slick-prev {
         left: 0;
     }
-
     .slider .slick-arrow.slick-next {
         right: 0;
     }
-
 }
 
 @media (max-width: 768px) {
     .practice {
         padding-top: 50px;
     }
-
     .slider__item img {
         height: 260px;
     }
-
     .slider__item {
         width: 360px;
     }
-
     .practice.practice--black {
         padding-bottom: 50px;
         margin-bottom: 20px;
     }
-
     .practice.practice--services {
         padding-bottom: 50px;
         padding-top: 40px;
     }
-
     .practice.practice--service {
         padding-bottom: 60px;
     }
 }
-
 
 @media (max-width: 475px) {
     .practice__top {
         flex-direction: column;
         align-items: flex-start;
     }
-
     .practice__top h2 {
         margin-bottom: 15px;
     }
-
     .slider__item {
         width: 300px;
     }

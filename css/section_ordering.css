@@ -8,7 +8,7 @@
 }
 
 .ordering__title {
-    color: #0a0e12; 
+    color: #0a0e12;
 }
 
 .ordering__text {
@@ -18,9 +18,9 @@
 }
 
 .ordering__box-inf {
-    width: 51%;
+    width: 50%;
 }
-    
+
 .ordering__box-form {
     width: 48%;
 }
@@ -36,7 +36,8 @@
     /* margin-top: -25px; */
 }
 
-.ordering__fields input, .ordering__fields select {
+.ordering__fields input,
+.ordering__fields select {
     border-top: none;
     border-left: none;
     border-right: none;
@@ -45,12 +46,31 @@
     padding-top: 1.8rem;
 }
 
-::-webkit-input-placeholder {color:#25292d;}
-::-moz-placeholder          {color:#25292d;}/* Firefox 19+ */
-:-moz-placeholder           {color:#25292d;}/* Firefox 18- */
-:-ms-input-placeholder      {color:#25292d;}
-:-moz-input-placeholder     {color:#25292d;}
+::-webkit-input-placeholder {
+    color: #25292d;
+}
 
+::-moz-placeholder {
+    color: #25292d;
+}
+
+
+/* Firefox 19+ */
+
+:-moz-placeholder {
+    color: #25292d;
+}
+
+
+/* Firefox 18- */
+
+:-ms-input-placeholder {
+    color: #25292d;
+}
+
+:-moz-input-placeholder {
+    color: #25292d;
+}
 
 .ordering__services-button {
     display: inline-block;
@@ -75,7 +95,7 @@
 }
 
 .ordering__services-button.active {
-    background-color: #0a0e12; 
+    background-color: #0a0e12;
     border: 1px solid #0a0e12;
     color: #fff;
 }
@@ -88,28 +108,24 @@
     .ordering {
         padding-top: 32px;
         padding-bottom: 100px;
-    }    
+    }
 }
 
-
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
     .ordering {
         padding-top: 22px;
         padding-bottom: 60px;
     }
-
     .ordering__box {
         flex-direction: column;
     }
-
     .ordering__text {
         width: 100%;
     }
-
-    .ordering__box-inf, .ordering__box-form {
+    .ordering__box-inf,
+    .ordering__box-form {
         width: 100%;
     }
-
     .ordering__fields {
         margin-top: 0;
     }

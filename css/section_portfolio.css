@@ -3,7 +3,8 @@
     appearance: none;
 }
 
-.portfolio__tabs label, .portfolio__reset {
+.portfolio__tabs label,
+.portfolio__reset {
     display: inline-block;
     border-radius: 30px;
     border: 1px solid #ccd1d3;
@@ -41,9 +42,6 @@ input[type="checkbox"]:checked+label {
     color: #ffffff;
 }
 
-
-
-
 .portfolio {
     padding-top: 219px;
     padding-bottom: 140px;
@@ -71,13 +69,13 @@ input[type="checkbox"]:checked+label {
     width: 100%;
 }
 
-.portfolio__item  {
+.portfolio__item {
     display: none;
     width: 33.3%;
     padding-top: 60px;
     padding-right: 15px;
     padding-left: 15px;
-} 
+}
 
 .portfolio__item.is-visible {
     display: block;
@@ -87,7 +85,8 @@ input[type="checkbox"]:checked+label {
     border-radius: 14px;
     height: 340px;
     object-fit: cover;
-} 
+}
+
 
 /* .portfolio__item img:hover {
     box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
@@ -99,12 +98,12 @@ input[type="checkbox"]:checked+label {
 }
 
 .image-container img {
-    transition: transform 0.3s ease-in-out; 
+    transition: transform 0.3s ease-in-out;
 }
 
 .image-container:hover img {
-    transform: scale(1.2); 
-}  
+    transform: scale(1.1);
+}
 
 .portfolio__item-title {
     display: block;
@@ -136,6 +135,7 @@ input[type="checkbox"]:checked+label {
     margin-right: 10px;
     margin-bottom: 5px;
     transition: 0.3s;
+    letter-spacing: 0.69px;
 }
 
 .portfolio__tegs a:hover {
@@ -153,7 +153,6 @@ input[type="checkbox"]:checked+label {
 .portfolio__btns a {
     margin-right: 16px;
 }
-
 
 .portfolio__tab {
     display: inline-block;
@@ -183,22 +182,18 @@ input[type="checkbox"]:checked+label {
     color: #ffffff; */
 }
 
-
 @media (max-width: 1200px) {
     .portfolio h1 {
         margin-bottom: 100px;
     }
-
     .portfolio {
         padding-top: 180px;
         padding-bottom: 100px;
     }
-
-    .portfolio__item  {
+    .portfolio__item {
         width: 50%;
         padding-top: 40px;
-    } 
-
+    }
     .portfolio__btns {
         margin-top: 80px;
     }
@@ -209,37 +204,31 @@ input[type="checkbox"]:checked+label {
         padding-top: 130px;
         padding-bottom: 60px;
     }
-
     .portfolio h1 {
         width: 100%;
         margin-bottom: 50px;
     }
-
     .portfolio__item img {
         height: 280px;
     }
-
     .portfolio__box {
         /* row-gap: 40px; */
     }
-
     .portfolio__btns {
         margin-top: 60px;
     }
 }
-
 
 @media (max-width: 660px) {
     .portfolio__box {
         /* grid-template-columns: repeat(auto-fill, 100%); */
         /* justify-content: center; */
     }
-
-    .portfolio__item  {
+    .portfolio__item {
         width: 100%;
         padding-right: 0;
         padding-left: 0;
-    } 
+    }
 }
 
 @media (max-width: 475px) {
@@ -249,7 +238,6 @@ input[type="checkbox"]:checked+label {
         margin-left: auto;
         margin-right: auto;
     }
-
     .portfolio__btns a {
         display: flex;
         justify-content: center;

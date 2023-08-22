@@ -44,7 +44,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .header__menu a {
@@ -69,10 +68,9 @@
     background-color: #3aae2a;
     border-radius: 30px;
     margin-left: -22px;
-    margin-bottom: 4px;
+    /*margin-bottom: 4px;*/
     /* transition: 0.3s; */
 }
-
 
 .header__menu .active::before {
     position: absolute;
@@ -83,10 +81,9 @@
     background-color: #3aae2a;
     border-radius: 30px;
     margin-left: -22px;
-    margin-bottom: 4px;
+    /*margin-bottom: 4px;*/
     transition: 0.3s;
 }
-
 
 .header__contacts {
     display: flex;
@@ -145,7 +142,8 @@
     transform: scale(1);
 }
 
-.burger::before, .burger::after {
+.burger::before,
+.burger::after {
     content: '';
     position: absolute;
     height: 2px;
@@ -197,12 +195,10 @@
         position: absolute;
         right: 5%;
         top: 27px;
-    }  
-
+    }
     .header__contacts {
         display: none;
     }
-
     .header__btn {
         border: 1px solid #3aae2a;
         background-color: transparent;
@@ -211,73 +207,60 @@
         margin-top: 10px;
         margin-bottom: 35px;
     }
-
     .header.open {
         top: 0 !important;
         background-color: #0a0e12;
     }
-    
     .header.open .header__menu {
         display: block;
         padding-top: 30px;
         font-size: 20px;
     }
-
     .header__menu a {
         text-transform: none;
     }
-
     .header.open .header__contacts {
         display: flex;
         flex-direction: column-reverse;
         align-items: flex-start;
         padding-bottom: 50px;
     }
-
     .header__box {
         position: relative;
         flex-direction: column;
         align-items: flex-start;
     }
-
     .header__menu ul {
         flex-direction: column;
         align-items: flex-start;
     }
-
     .header__menu li {
         padding-bottom: 20px;
     }
-
     .header__mail {
         display: block;
         color: #ffffff;
         font-size: 16px;
         padding-top: 15px;
     }
-
     .header__tel {
         margin-right: 0;
         font-size: 16px;
     }
-
     .header__icons {
         display: block;
     }
-
-    .header__menu .active::before { 
+    .header__menu .active::before {
         margin-left: -14px;
     }
-
     .header__menu li:hover::before {
         margin-left: -14px;
     }
 }
 
-
 @media (max-width: 768px) {
     .header__box {
         margin-left: 0;
         margin-right: 0;
-    }    
+    }
 }
