@@ -16,26 +16,30 @@
     object-fit: cover;
     height: 100%;
     min-height: 450px;
+    max-height: 450px;
     border-radius: 14px;
 }
 
 .service-point h3 {
-    padding-top: 40px;
+    padding-top: 30px;
+    letter-spacing: 0.7px;
     color: #0a0e12;
 }
 
 .service-point p {
-    padding-top: 30px;
+    padding-top: 22px;
+    line-height: 132%;
     color: #25292d;
 }
 
 .service-point__content {
-    padding-right: 6%;
+    padding-right: 5.5%;
 }
 
 
 .service-point.revers .service-point__content {
-    padding-left: 6%;
+    padding-left: 5.5%;
+    padding-right: 1.5%;
 }
 
 
@@ -46,14 +50,14 @@
 
 .service-picture img {
     object-fit: cover;
-    height: 90vh;
+    height: 95vh;
     border-radius: 14px;
 }
 
 
 
 .service-main {
-    padding-bottom: 100px;
+    padding-bottom: 92px;
 }
 
 .service-main__box {
@@ -62,28 +66,35 @@
 }
 
 .service-main__descr {
-    width: 44%;
+    width: 43%;
 }
 
 .service-main__types {
-    width: 48%;
+    width: 49%;
 }
 
 .service-main h2, .service-main h3 {
     color: #0a0e12;
+    letter-spacing: 0.7px;
 }
 
 .service-main h3 {
     margin-top: 10px;
 }
 
-.service-main p, .service-main ul {
-    padding-top: 30px;
+.service-main p {
+    padding-top: 15px;
     color: #25292d;
+    line-height: 143%;
+}
+
+.service-main ul {
+    padding-top: 25px;
+    color: #25292d;   
 }
 
 .service-main__box {
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 
@@ -97,8 +108,8 @@
 
 .service-main li {
     position: relative;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     border-bottom: 1px solid #ccd1d3;
     padding-left: 15px;
 }

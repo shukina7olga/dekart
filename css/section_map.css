@@ -1,6 +1,7 @@
 .contact-title {
-    padding-top: 219px;
-    padding-bottom: 132px;
+    padding-top: 210px;
+    padding-bottom: 118px;
+    letter-spacing: 1.2px;
 }
 
 .contact-title h1 {
@@ -11,25 +12,36 @@
 
 
 .map {
-    padding-bottom: 140px;
+    padding-bottom: 130px;
 }
 
 .map__box {
     display: flex;
 }
 
-.map__card, .map__inf {
-    width: 50%;
+
+.map__card {
+    width: 49%;
 }
 
 .map__inf {
-    padding: 8%;
+    width: 51%;
+}
+
+.map__inf {
+    padding: 7.5%;
 }
 
 .map__inf-link {
     display: block;
     color: #0a0e12;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    letter-spacing: 0.6px;
+    transition: 0.3s;
+}
+
+.map__inf-link:hover {
+    color: #3aae2a;
 }
 
 .map__inf-adress {
@@ -39,17 +51,17 @@
 }
 
 .map__inf .btn-base {
-    margin-top: 26px;
+    margin-top: 17px;
     display: inline-block;
 }
 
 .map__icons {
-    padding-top: 50px;
+    padding-top: 45px;
 }
 
 .map__icons a {
     display: inline-block;
-    margin-right: 50px;
+    margin-right: 42px;
 }
 
 .map__icons svg {
@@ -61,14 +73,15 @@
     fill: #0a0e12;
 }
 
-.map__icons svg path:hover {
+.map__icons a:hover svg path {
     fill: #3aae2a;
+    transition: 0.3s;
 }
 
 
 .map__card-base iframe {
     width: 100%;
-    height: 100%;
+    height: 98%;
 }
 
 .map__card-base {

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header active">
         <div class="container">
             <div class="header__box">
                 <div class="header__logo-box">
@@ -18,10 +18,10 @@
                 </div>
                 <nav class="header__menu text-15 text--medium">
                     <ul>
-                        <li class="active"><a href="./portfolio.html">Портфолио</a></li>
-                        <li><a href="./services.html">Услуги</a></li>
-                        <li><a href="./company.html">Компания</a></li>
-                        <li class=""><a href="./contact.html">Контакты</a></li>
+                        <li class="header__menu-li active"><a href="./portfolio.html">Портфолио</a></li>
+                        <li class="header__menu-li"><a href="./services.html">Услуги</a></li>
+                        <li class="header__menu-li"><a href="./company.html">Компания</a></li>
+                        <li class="header__menu-li"><a href="./contact.html">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="header__contacts text--medium">
@@ -53,6 +53,7 @@
         </div>
     </header>
 
+
     <section class="portfolio">
         <div class="container">
             <h1>Надежность, качество<br>
@@ -60,18 +61,21 @@
                 части наших проектов
             </h1>
             
-            <div class="portfolio__tabs text-14 text--medium">
-                <button class="portfolio__tab all" data-filter="">все проекты</button>
-                <button class="portfolio__tab" data-filter=".repair">ремонт</button>
-                <button class="portfolio__tab" data-filter=".construction">Строительство</button>
-                <button class="portfolio__tab" data-filter=".design">дизайн</button>
-                <button class="portfolio__tab"  data-filter=".planning">проектирование</button>
+            <div class="portfolio__tabs text-14 text--medium" id="form-ui">
+                <button class="portfolio__reset active" id="reset-checkboxes">все проекты</button>
+                <input class="portfolio__check" type="checkbox" value=".repair" id="repair" /><label for="repair">ремонт</label>
+                <input class="portfolio__check" type="checkbox" value=".construction" id="construction" /><label for="construction">Строительство</label>
+                <input class="portfolio__check" type="checkbox" value=".design" id="design" /><label for="design">дизайн</label>
+                <input class="portfolio__check" type="checkbox" value=".planning" id="planning" /><label for="planning">проектирование</label>
             </div>
 
-            <div class="portfolio__box">
-                <div class="portfolio__item repair">
+            <div id="container" class="portfolio__box" >
+                <div class="base portfolio__item repair">
                     <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/1.png" alt="">
+                        <div class="image-container">
+                            <img src="./img/portfolio/1.png" alt="">
+                        </div>
+                        
                         <p class="portfolio__item-title text-30">
                             Ремонт и дизайн квартиры на Каширском шоссе
                         </p>
@@ -80,9 +84,11 @@
                         <a href="">Ремонт</a>
                     </div>
                 </div>
-                <div class="portfolio__item repair construction design">
+                <div class="base portfolio__item repair construction design">
                     <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/2.png" alt="">
+                        <div class="image-container">
+                            <img src="./img/portfolio/2.png" alt="">
+                        </div>
                         <p class="portfolio__item-title text-30">
                             Дом из газобетона с двумя балконами
                         </p>                        
@@ -93,9 +99,12 @@
                         <a href="">Ремонт</a>
                     </div>
                 </div>
-                <div class="portfolio__item design">
+                <div class="base portfolio__item design">
                     <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/3.png" alt="">
+                        <div class="image-container">
+                            <img src="./img/portfolio/3.png" alt="">
+                        </div>
+                        
                         <p class="portfolio__item-title text-30">
                             Дизайн гостиной комнаты в частном доме
                         </p>
@@ -104,9 +113,12 @@
                         <a href="">дизайн</a>
                     </div>
                 </div>
-                <div class="portfolio__item repair construction">
+                <div class="base portfolio__item repair construction">
                     <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/4.png" alt="">
+                        <div class="image-container">
+                            <img src="./img/portfolio/4.png" alt="">
+                        </div>
+                        
                         <p class="portfolio__item-title text-30">
                             3-х комнатная квартира в Люберцах
                         </p>
@@ -116,9 +128,12 @@
                         <a href="">Строительство</a>
                     </div>
                 </div>
-                <div class="portfolio__item construction">
+                <div class="base portfolio__item construction">
                     <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/5.png" alt="">
+                        <div class="image-container">
+                            <img src="./img/portfolio/5.png" alt="">
+                        </div>
+                        
                         <p class="portfolio__item-title text-30">
                             Ремонт квартиры в ЖК Пресня Сити
                         </p>
@@ -127,9 +142,12 @@
                         <a href="">Строительство</a>
                     </div>
                 </div>
-                <div class="portfolio__item design repair">
+                <div class="base portfolio__item design repair">
                     <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/6.png" alt="">
+                        <div class="image-container">
+                            <img src="./img/portfolio/6.png" alt="">
+                        </div>
+                        
                         <p class="portfolio__item-title text-30">
                             Ремонт квартиры в Некрасовке
                         </p>
@@ -139,9 +157,12 @@
                         <a href="">Ремонт</a>
                     </div>
                 </div>
-                <div class="portfolio__item repair">
+                <div class="base portfolio__item repair">
                     <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/7.png" alt="">
+                        <div class="image-container">
+                            <img src="./img/portfolio/7.png" alt="">
+                        </div>
+                        
                         <p class="portfolio__item-title text-30">
                             Дизайн 1-комнатной квартиры в ЖК Искра Парк
                         </p>
@@ -150,9 +171,12 @@
                         <a href="">Ремонт</a>
                     </div>
                 </div>
-                <div class="portfolio__item construction design">
+                <div class="base portfolio__item construction design">
                     <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/8.png" alt="">
+                        <div class="image-container">
+                            <img src="./img/portfolio/8.png" alt="">
+                        </div>
+                        
                         <p class="portfolio__item-title text-30">
                             Строительство ленточного Т-образного фундамента
                         </p>
@@ -162,9 +186,12 @@
                         <a href="">дизайн</a>
                     </div>
                 </div>
-                <div class="portfolio__item design repair">
+                <div class="base portfolio__item design repair">
                     <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/9.png" alt="">
+                        <div class="image-container">
+                            <img src="./img/portfolio/9.png" alt="">
+                        </div>
+                        
                         <p class="portfolio__item-title text-30">
                             Дизайн гостиной комнаты в частном доме
                         </p>
@@ -174,9 +201,12 @@
                         <a href="">Ремонт</a>
                     </div>
                 </div>
-                <div class="portfolio__item repair">
+                <div class="base portfolio__item repair">
                     <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/10.png" alt="">
+                        <div class="image-container">
+                            <img src="./img/portfolio/10.png" alt="">
+                        </div>    
+                        
                         <p class="portfolio__item-title text-30">
                             Дизайн загородного дома в стиле Кантри
                         </p>
@@ -185,9 +215,12 @@
                         <a href="">Ремонт</a>
                     </div>
                 </div>
-                <div class="portfolio__item construction">
+                <div class="base portfolio__item construction">
                     <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/11.png" alt="">
+                        <div class="image-container">
+                            <img src="./img/portfolio/11.png" alt="">
+                        </div>
+                        
                         <p class="portfolio__item-title text-30">
                             Дом из газобетона с двумя балконами
                         </p>
@@ -196,9 +229,12 @@
                         <a href="">Строительство</a>
                     </div>
                 </div>
-                <div class="portfolio__item design">
+                <div class="base portfolio__item design">
                     <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/12.png" alt="">
+                        <div class="image-container">
+                            <img src="./img/portfolio/12.png" alt="">
+                        </div>
+                        
                         <p class="portfolio__item-title text-30">
                             Строительство загородного дома на Киевском шоссе
                         </p>
@@ -207,9 +243,12 @@
                         <a href="">дизайн</a>
                     </div>
                 </div>
-                <div class="portfolio__item repair">
+                <div class="base portfolio__item repair">
                     <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/13.png" alt="">
+                        <div class="image-container">
+                            <img src="./img/portfolio/13.png" alt="">
+                        </div>
+                        
                         <p class="portfolio__item-title text-30">
                             Дом из газобетона с отделкой облицовочным кирпичом
                         </p>
@@ -218,9 +257,12 @@
                         <a href="">Ремонт</a>
                     </div>
                 </div>
-                <div class="portfolio__item construction">
+                <div class="base portfolio__item construction">
                     <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/14.png" alt="">
+                        <div class="image-container">
+                            <img src="./img/portfolio/14.png" alt="">
+                        </div>
+                        
                         <p class="portfolio__item-title text-30">
                             Дизайн спальной комнаты в классическом стиле
                         </p>
@@ -229,9 +271,12 @@
                         <a href="">Строительство</a>
                     </div>
                 </div>
-                <div class="portfolio__item design">
+                <div class="base portfolio__item design">
                     <a href="" class="portfolio__wrap">
-                        <img src="./img/portfolio/15.png" alt="">
+                        <div class="image-container">
+                            <img src="./img/portfolio/15.png" alt="">
+                        </div>
+                        
                         <p class="portfolio__item-title text-30">
                             Дизайн квартиры в ЖК Эмеральд
                         </p>
@@ -241,13 +286,104 @@
                     </div>
                 </div>
 
+                <div class="portfolio__item design more">
+                    <a href="" class="portfolio__wrap">
+                        <div class="image-container">
+                            <img src="./img/portfolio/15.png" alt="">
+                        </div>
+                        
+                        <p class="portfolio__item-title text-30">
+                            16Дизайн квартиры в ЖК Эмеральд
+                        </p>
+                    </a>
+                    <div class="portfolio__tegs">
+                        <a href="">дизайн</a>
+                    </div>
+                </div>
+
+                <div class="portfolio__item design more">
+                    <a href="" class="portfolio__wrap">
+                        <div class="image-container">
+                            <img src="./img/portfolio/15.png" alt="">
+                        </div>
+                        
+                        <p class="portfolio__item-title text-30">
+                            17Дизайн квартиры в ЖК Эмеральд
+                        </p>
+                    </a>
+                    <div class="portfolio__tegs">
+                        <a href="">дизайн</a>
+                    </div>
+                </div>
+
+                <div class="portfolio__item design more">
+                    <a href="" class="portfolio__wrap">
+                        <div class="image-container">
+                            <img src="./img/portfolio/15.png" alt="">
+                        </div>
+                        
+                        <p class="portfolio__item-title text-30">
+                            18Дизайн квартиры в ЖК Эмеральд
+                        </p>
+                    </a>
+                    <div class="portfolio__tegs">
+                        <a href="">дизайн</a>
+                    </div>
+                </div>
+
+
+                <div class="portfolio__item repair construction design more">
+                    <a href="" class="portfolio__wrap">
+                        <div class="image-container">
+                            <img src="./img/portfolio/2.png" alt="">
+                        </div>
+                        
+                        <p class="portfolio__item-title text-30">
+                            19Дом из газобетона с двумя балконами
+                        </p>                        
+                    </a>
+                    <div class="portfolio__tegs">
+                        <a href="">Строительство</a>
+                        <a href="">дизайн</a>
+                        <a href="">Ремонт</a>
+                    </div>
+                </div>
+                <div class="portfolio__item design more">
+                    <a href="" class="portfolio__wrap">
+                        <div class="image-container">
+                            <img src="./img/portfolio/3.png" alt="">
+                        </div>
+                        
+                        <p class="portfolio__item-title text-30">
+                            20Дизайн гостиной комнаты в частном доме
+                        </p>
+                    </a>
+                    <div class="portfolio__tegs">
+                        <a href="">дизайн</a>
+                    </div>
+                </div>
+                <div class="portfolio__item repair construction more">
+                    <a href="" class="portfolio__wrap">
+                        <div class="image-container">
+                            <img src="./img/portfolio/4.png" alt="">
+                        </div>
+                        
+                        <p class="portfolio__item-title text-30">
+                            213-х комнатная квартира в Люберцах
+                        </p>
+                    </a>
+                    <div class="portfolio__tegs">
+                        <a href="">Ремонт</a>
+                        <a href="">Строительство</a>
+                    </div>
+                </div>
 
             </div>
 
 
             <div class="portfolio__btns">
                 <a href="" class="btn-base btn-base--border text--medium">консультация</a>
-                <button id="more" class="btn-base btn-base--black text--medium">Смотреть еще</button>
+                <button id="more" class="show-more btn-base btn-base--black text--medium" data-filter=".more">Смотреть еще</button>
             </div>
         </div>
     </section>
@@ -338,29 +474,30 @@
                 <div class="ordering__box-form">
                     <form action="">
                         <div class="ordering__fields">
+                            <label class="text-18 ordering__services-label">Услуга</label>
+                            <div class="ordering__services">
+                                <button class="ordering__services-button">ремонт</button>
+                                <button class="ordering__services-button">строительство</button>
+                                <button class="ordering__services-button">дизайн</button>
+                            </div>
                             <div class="placeholder-container">
                                 <input class="text-18" type="text" placeholder=" ">
-                                <label>Имя*</label>
+                                <label class="text-18">Имя*</label>
+                            </div>
+
+                            <div class="placeholder-container">
+                                <input class="text-18 tel" type="text" placeholder=" ">
+                                <label class="text-18">Телефон*</label>
+                            </div>
+
+                            <div class="placeholder-container">
+                                <input class="text-18 mail" type="text" placeholder=" ">
+                                <label class="text-18">Email*</label>
                             </div>
 
                             <div class="placeholder-container">
                                 <input class="text-18" type="text" placeholder=" ">
-                                <label>Телефон*</label>
-                            </div>
-
-                            <div class="placeholder-container">
-                                <input class="text-18" type="text" placeholder=" ">
-                                <label>Email*</label>
-                            </div>
-                            <select name="" id="" class="text-18">
-                                <option class="text-18" value="">Услуга</option>
-                                <option class="text-18" value="">Услуга1</option>
-                                <option class="text-18" value="">Услуга2</option>
-                            </select>
-
-                            <div class="placeholder-container">
-                                <input class="text-18" type="text" placeholder=" ">
-                                <label>Комментарий</label>
+                                <label class="text-18">Комментарий</label>
                             </div>                           
                         </div>
                         <button class="btn-base btn-base--black" type="submit">отправить</button>
@@ -411,9 +548,9 @@
                     <p class="footer__title text-15 text--medium">контакты</p>
                     <a class="footer__contact-data text-22 text--medium" href="tel:+74955023635">+7 (495) 502 36 35</a>
                     <a class="footer__contact-data text-22 text--medium" href="mailto:info@sk-dekart.ru">info@sk-dekart.ru</a>
-                    <p class="footer__contact-adress text-18">
+                    <a class="footer__contact-adress text-18" href="https://yandex.ru/maps/-/CXEaYjs" target="_blank">
                         3-е Почтовое отд., 102, ​офис 811 Люберцы, Московская обл.
-                    </p>
+                    </a>
                 </div>
                 <div class="footer__group footer__group--wrap-links">
                     <p class="footer__title text-15 text--medium">Компания</p>
@@ -452,9 +589,10 @@
     <script src="./js/down-btn.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/watch-more.js"></script>
     <script src="./js/isotope.min.js"></script>
     <script src="./js/tabs.js"></script>
     <script src="./js/watch-more.js"></script>
-    
+    <script src="./js/form.js"></script>
 </body>
 </html>

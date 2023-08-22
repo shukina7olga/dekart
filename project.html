@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header active">
         <div class="container">
             <div class="header__box">
                 <div class="header__logo-box">
@@ -18,10 +18,10 @@
                 </div>
                 <nav class="header__menu text-15 text--medium">
                     <ul>
-                        <li class="active"><a href="./portfolio.html">Портфолио</a></li>
-                        <li><a href="./services.html">Услуги</a></li>
-                        <li><a href="./company.html">Компания</a></li>
-                        <li class=""><a href="./contact.html">Контакты</a></li>
+                        <li class="header__menu-li"><a href="./portfolio.html">Портфолио</a></li>
+                        <li class="header__menu-li active"><a href="./services.html">Услуги</a></li>
+                        <li class="header__menu-li"><a href="./company.html">Компания</a></li>
+                        <li class="header__menu-li"><a href="./contact.html">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="header__contacts text--medium">
@@ -55,6 +55,11 @@
 
     <section class="project-main">
         <img src="./img/main-slider/Group_12.png" alt="">
+        <span class="main__down-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="10" viewBox="0 0 17 10">
+                <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="17" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAKCAYAAABSfLWiAAAAfklEQVQokZWSqw6AMAxF9xM4FMEiyTz/vyAwCCQoFF9wSMNIlr3XZGJ3d6dNWwVowAA9oBpOb/9puax8cTSABuuXMCKMwNkACvzJh1qA6CnDDnQeYAKuWCI/kxhva9wckKsHlcZK9kFLDpCC+KA/kr3KTWEGnpqplfahvIigXmgjK1BxWLb6AAAAAElFTkSuQmCC"/>
+            </svg>
+        </span>
     </section>
 
     <section class="project-inform">
@@ -202,41 +207,55 @@
         </div>
     </section>
 
-    <section class="practice  practice--black">
+    <div class="practice practice--black">
         <div class="container">
             <p class="small-title text-14 text--medium">Наше портфолио</p>
             <div class="practice__top">
                 <h2>Похожие проекты</h2> 
                 <a href="" class="practice__btn">все проекты</a>              
             </div>
-        </div>  
 
-        <div class="practice__box">
             <div class="slider">
                 <div class="slider__item">
-                    <img src="./img/slider/1.png" alt="">
-                    <h3><a href="">Дом из газобетона с отделкой облицовочным кирпичом</a></h3>
+                    <a href="">
+                        <div class="image-container">
+                            <img src="./img/slider/1.png" alt="">
+                        </div>
+                        <h3>Дом из газобетона с отделкой облицовочным кирпичом</h3>
+                    </a>
                     <a href="" class="slider__btn">Ремонт</a>
                 </div>
                 <div class="slider__item">
-                    <img src="./img/slider/2.png" alt="">
-                    <h3><a href="">Дизайн спальной комнаты в классическом стиле</a></h3>
+                    <a href="">
+                        <div class="image-container">
+                            <img src="./img/slider/2.png" alt="">
+                        </div>
+                        <h3>Дизайн спальной комнаты в классическом стиле</h3>
+                    </a>
                     <a href="" class="slider__btn">Строительство</a>
                 </div>
                 <div class="slider__item">
-                    <img src="./img/slider/3.png" alt="">
-                    <h3><a href="">Дизайн квартиры в ЖК Эмеральд</a></h3>
+                    <a href="">
+                        <div class="image-container">
+                            <img src="./img/slider/3.png" alt="">
+                        </div>
+                        <h3>Дизайн квартиры в ЖК Эмеральд</h3>
+                    </a>
                     <a href="" class="slider__btn">дизайн</a>
                 </div>
                 <div class="slider__item">
-                    <img src="./img/slider/4.png" alt="">
-                    <h3><a href="">Ремонт квартиры в ЖК Пресня Сити</a></h3>
+                    <a href="">
+                        <div class="image-container">
+                            <img src="./img/slider/4.png" alt="">
+                        </div>
+                        <h3>Ремонт квартиры в ЖК Пресня Сити</h3>
+                    </a>
                     <a href="" class="slider__btn">Строительство</a>
                 </div>
             </div>
-        </div>
 
-    </section>
+        </div>
+    </div>
 
     <section class="clients">
         <div class="container">
@@ -306,29 +325,30 @@
                 <div class="ordering__box-form">
                     <form action="">
                         <div class="ordering__fields">
+                            <label class="text-18 ordering__services-label">Услуга</label>
+                            <div class="ordering__services">
+                                <button class="ordering__services-button">ремонт</button>
+                                <button class="ordering__services-button">строительство</button>
+                                <button class="ordering__services-button">дизайн</button>
+                            </div>
                             <div class="placeholder-container">
                                 <input class="text-18" type="text" placeholder=" ">
-                                <label>Имя*</label>
+                                <label class="text-18">Имя*</label>
+                            </div>
+
+                            <div class="placeholder-container">
+                                <input class="text-18 tel" type="text" placeholder=" ">
+                                <label class="text-18">Телефон*</label>
+                            </div>
+
+                            <div class="placeholder-container">
+                                <input class="text-18 mail" type="text" placeholder=" ">
+                                <label class="text-18">Email*</label>
                             </div>
 
                             <div class="placeholder-container">
                                 <input class="text-18" type="text" placeholder=" ">
-                                <label>Телефон*</label>
-                            </div>
-
-                            <div class="placeholder-container">
-                                <input class="text-18" type="text" placeholder=" ">
-                                <label>Email*</label>
-                            </div>
-                            <select name="" id="" class="text-18">
-                                <option class="text-18" value="">Услуга</option>
-                                <option class="text-18" value="">Услуга1</option>
-                                <option class="text-18" value="">Услуга2</option>
-                            </select>
-
-                            <div class="placeholder-container">
-                                <input class="text-18" type="text" placeholder=" ">
-                                <label>Комментарий</label>
+                                <label class="text-18">Комментарий</label>
                             </div>                           
                         </div>
                         <button class="btn-base btn-base--black" type="submit">отправить</button>
@@ -379,9 +399,9 @@
                     <p class="footer__title text-15 text--medium">контакты</p>
                     <a class="footer__contact-data text-22 text--medium" href="tel:+74955023635">+7 (495) 502 36 35</a>
                     <a class="footer__contact-data text-22 text--medium" href="mailto:info@sk-dekart.ru">info@sk-dekart.ru</a>
-                    <p class="footer__contact-adress text-18">
+                    <a class="footer__contact-adress text-18" href="https://yandex.ru/maps/-/CXEaYjs" target="_blank">
                         3-е Почтовое отд., 102, ​офис 811 Люберцы, Московская обл.
-                    </p>
+                    </a>
                 </div>
                 <div class="footer__group footer__group--wrap-links">
                     <p class="footer__title text-15 text--medium">Компания</p>
@@ -421,6 +441,6 @@
     <script src="./js/script.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/tabs.js"></script>
-    
+    <script src="./js/form.js"></script>
 </body>
 </html>

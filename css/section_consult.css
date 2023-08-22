@@ -13,20 +13,22 @@
 .consult__title {
     text-transform: uppercase;
     color: #3aae2a;
+    letter-spacing: 0.7px;
 }
 
 .consult__slogan {
     color: #ffffff;
-    padding-top: 35px;
+    padding-top: 26px;
+    line-height: 108%;
 }
 
 .consult__text {
     color: #ffffff;
-    padding: 35px 12%;
+    padding: 25px 16%;
 }
 
 .consult__btns {
-    padding-top: 20px;
+    padding-top: 11px;
 }
 
 .consult__btns .btn-base:first-child {

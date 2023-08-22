@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header active">
         <div class="container">
             <div class="header__box">
                 <div class="header__logo-box">
@@ -18,10 +18,10 @@
                 </div>
                 <nav class="header__menu text-15 text--medium">
                     <ul>
-                        <li><a href="./portfolio.html">Портфолио</a></li>
-                        <li><a href="./services.html">Услуги</a></li>
-                        <li class="active"><a href="./company.html">Компания</a></li>
-                        <li class=""><a href="./contact.html">Контакты</a></li>
+                        <li class="header__menu-li"><a href="./portfolio.html">Портфолио</a></li>
+                        <li class="header__menu-li"><a href="./services.html">Услуги</a></li>
+                        <li class="header__menu-li active"><a href="./company.html">Компания</a></li>
+                        <li class="header__menu-li"><a href="./contact.html">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="header__contacts text--medium">
@@ -390,29 +390,30 @@
                 <div class="ordering__box-form">
                     <form action="">
                         <div class="ordering__fields">
+                            <label class="text-18 ordering__services-label">Услуга</label>
+                            <div class="ordering__services">
+                                <button class="ordering__services-button">ремонт</button>
+                                <button class="ordering__services-button">строительство</button>
+                                <button class="ordering__services-button">дизайн</button>
+                            </div>
                             <div class="placeholder-container">
                                 <input class="text-18" type="text" placeholder=" ">
-                                <label>Имя*</label>
+                                <label class="text-18">Имя*</label>
+                            </div>
+
+                            <div class="placeholder-container">
+                                <input class="text-18 tel" type="text" placeholder=" ">
+                                <label class="text-18">Телефон*</label>
+                            </div>
+
+                            <div class="placeholder-container">
+                                <input class="text-18 mail" type="text" placeholder=" ">
+                                <label class="text-18">Email*</label>
                             </div>
 
                             <div class="placeholder-container">
                                 <input class="text-18" type="text" placeholder=" ">
-                                <label>Телефон*</label>
-                            </div>
-
-                            <div class="placeholder-container">
-                                <input class="text-18" type="text" placeholder=" ">
-                                <label>Email*</label>
-                            </div>
-                            <select name="" id="" class="text-18">
-                                <option class="text-18" value="">Услуга</option>
-                                <option class="text-18" value="">Услуга1</option>
-                                <option class="text-18" value="">Услуга2</option>
-                            </select>
-
-                            <div class="placeholder-container">
-                                <input class="text-18" type="text" placeholder=" ">
-                                <label>Комментарий</label>
+                                <label class="text-18">Комментарий</label>
                             </div>                           
                         </div>
                         <button class="btn-base btn-base--black" type="submit">отправить</button>
@@ -463,9 +464,9 @@
                     <p class="footer__title text-15 text--medium">контакты</p>
                     <a class="footer__contact-data text-22 text--medium" href="tel:+74955023635">+7 (495) 502 36 35</a>
                     <a class="footer__contact-data text-22 text--medium" href="mailto:info@sk-dekart.ru">info@sk-dekart.ru</a>
-                    <p class="footer__contact-adress text-18">
+                    <a class="footer__contact-adress text-18" href="https://yandex.ru/maps/-/CXEaYjs" target="_blank">
                         3-е Почтовое отд., 102, ​офис 811 Люберцы, Московская обл.
-                    </p>
+                    </a>
                 </div>
                 <div class="footer__group footer__group--wrap-links">
                     <p class="footer__title text-15 text--medium">Компания</p>
@@ -505,6 +506,7 @@
     <script src="./js/script.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/tabs.js"></script>
-    
+    <script src="./js/form.js"></script>
+
 </body>
 </html>

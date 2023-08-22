@@ -45,8 +45,8 @@ $( function() {
       filterValue = filterValue.join(', ');
     } else {
       filterValue = exclusives;
-  }
-    
+    }
+
     $container.isotope({ filter: filterValue })
   });
 

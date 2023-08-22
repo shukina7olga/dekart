@@ -1,10 +1,14 @@
+.project-main {
+    position: relative;
+}
+
 .project-inform {
     padding-top: 130px;
-    padding-bottom: 140px;
+    padding-bottom: 130px;
 }
 
 .project-main img {
-    height: 100vh;
+    height: 80vh;
     object-fit: cover;
 }
 
@@ -30,7 +34,7 @@
 .project-inform__feature {
     display: flex;
     color: #25292d;
-    padding: 20px 0;
+    padding: 16px 0;
 }
 
 .project-inform__feature-title {
@@ -50,11 +54,12 @@
 
 .project-inform__descr h2 {
     color: #0a0e12;
+    letter-spacing: 1.2px;
 }
 
 .project-inform__descr p {
     color: #25292d;
-    margin-top: 30px;
+    margin-top: 20px;
     padding-right: 10%;
 }
 
@@ -70,12 +75,12 @@
 }
 
 .project-gallery__box img {
-    height: 50vh;
+    height: 46.9vh;
     object-fit: cover;
 }
 
 .project-gallery-unic img {
-    height: 100vh;
+    height: 94vh;
     object-fit: cover;
 }
 
@@ -86,7 +91,11 @@
 
 .project-gallery__text {
     padding: 4%;
-    padding-left: 10%;
+    padding-left: 11%;
+}
+
+.project-gallery__text h3 {
+    letter-spacing: 0.7px;
 }
 
 .project-gallery__text h2 {
@@ -95,7 +104,7 @@
 
 .project-gallery__text p {
     color: #25292d;
-    margin-top: 30px;
+    margin-top: 20px;
     padding-right: 5%;
 }
 

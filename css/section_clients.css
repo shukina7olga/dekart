@@ -1,9 +1,10 @@
 .clients {
-    padding: 140px 0;
+    padding-bottom: 110px;
+    padding-top: 125px;
 }
 
 .logo {
-    padding-top: 4.7%;
+    padding-top: 4.2%;
     position: relative;
     display: flex;
     overflow: hidden;
@@ -52,15 +53,25 @@
 .clients-figure span {
     color: #0a0e12;
     display: inline-block;
-    margin-right: 7px;
     line-height: 1;
+    font-weight: 700;
 }
+
+.clients-figure span:nth-child(3) {
+    margin-left: 20px;
+}
+
 
 .clients__text {
     text-align: center;
     color: #3aae2a;
 }
 
+
+.clients.practice--service {
+    padding-bottom: 115px;
+    padding-top: 90px;
+}
 
 .running {
     /* opacity: 1;
@@ -86,5 +97,10 @@
 
     .clients-figure span {
         margin-right: 0;
+    }
+
+    .clients.practice--service {
+        padding-bottom: 30px;
+        padding-top: 40px;
     }
 }

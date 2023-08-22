@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
-    margin-top: -25px;
+    /* margin-top: -25px; */
 }
 
 .ordering__fields input, .ordering__fields select {
@@ -42,7 +42,7 @@
     border-right: none;
     border-bottom: 1px solid #ccd1d3;
     padding-right: 1.7rem;
-    padding-top: 2rem;
+    padding-top: 1.8rem;
 }
 
 ::-webkit-input-placeholder {color:#25292d;}
@@ -51,6 +51,38 @@
 :-ms-input-placeholder      {color:#25292d;}
 :-moz-input-placeholder     {color:#25292d;}
 
+
+.ordering__services-button {
+    display: inline-block;
+    color: #25292d;
+    letter-spacing: 0.7px;
+    font-size: 14px;
+    font-family: 'Aeonik Pro Medium';
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 15px 24px;
+    border-radius: 30px;
+    border: 1px solid #ccd1d3;
+    background-color: #fff;
+    margin-right: 14px;
+    line-height: 1;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.ordering__services-button:hover {
+    border: 1px solid #25292d;
+}
+
+.ordering__services-button.active {
+    background-color: #0a0e12; 
+    border: 1px solid #0a0e12;
+    color: #fff;
+}
+
+.ordering__services-label {
+    margin-top: 10px;
+}
 
 @media (max-width: 1024px) {
     .ordering {

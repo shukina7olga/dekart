@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>service-construction</title>
+    <title>portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -18,8 +18,8 @@
                 </div>
                 <nav class="header__menu text-15 text--medium">
                     <ul>
-                        <li class="header__menu-li"><a href="./portfolio.html">Портфолио</a></li>
-                        <li class="header__menu-li active"><a href="./services.html">Услуги</a></li>
+                        <li class="header__menu-li active"><a href="./portfolio.html">Портфолио</a></li>
+                        <li class="header__menu-li"><a href="./services.html">Услуги</a></li>
                         <li class="header__menu-li"><a href="./company.html">Компания</a></li>
                         <li class="header__menu-li"><a href="./contact.html">Контакты</a></li>
                     </ul>
@@ -53,236 +53,342 @@
         </div>
     </header>
 
-    <div class="service-baner">
-        <div class="container">
-            <img src="./img/service-construction/Group_6.png" alt="">
-        </div>
-    </div>
 
-    <section class="service-main">
+    <section class="portfolio">
         <div class="container">
-            <svg width="50" height="50" fill="#3DAE2B" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"><g><g><g>
-            <path fill="#3DAE2B" d="M25,50C11.2,50,0,38.8,0,25S11.2,0,25,0s25,11.2,25,25S38.8,50,25,50z M25,1.4C12,1.4,1.4,12,1.4,25
-            C1.4,38,12,48.6,25,48.6S48.6,38,48.6,25C48.6,12,38,1.4,25,1.4z"/></g></g><g>
-            <rect x="32.7" y="26.7" width="4.8" height="4.8"/>
-            <path fill="#3DAE2B" d="M20.6,14.9v-4.3h-4.8v4.3h-4.5v2.5c0,1.2,1,2.3,2.3,2.3h2.2v0h4.8v0h13.5v3.4c0,0.6,0.5,1.1,1.1,1.1h1.3v-4.5
-            h4.6v-2.5c0-1.2-1-2.3-2.3-2.3H20.6z"/>
-            <rect x="15.9" y="22.1" width="4.8" height="17.8"/></g></g>
-            </svg>
-            <div class="service-main__box">
-                <div class="service-main__descr">
-                    <h2>Строительство</h2>
-                    <p class="text-22">
-                        Компания Dekart специализируется на строительстве домов под ключ. Мы предлагаем услуги полного цикла, 
-                        включая проектирование и дизайн будущего дома, возведение фундамента, стен и перекрытий, чистовую отделку 
-                        дома, благоустройство территории, любые виды монтажных и строительных работ. 
-                    </p>
-                    <p class="text-22">
-                        Мы строим дома с 2007 года и за это время успешно реализовали более 300 объектов различной сложности. Наша 
-                        экспертиза и многолетний опыт позволяют нам 
-                        с уверенностью гарантировать отличный результат.
-                    </p>
+            <h1>Надежность, качество<br>
+                и комфорт — неотъемлемые
+                части наших проектов
+            </h1>
+            
+            <div class="portfolio__tabs text-14 text--medium" id="form-ui">
+                <button class="portfolio__reset active" id="reset-checkboxes">все проекты</button>
+                <input class="portfolio__check" type="checkbox" value=".repair" id="repair" /><label for="repair">ремонт</label>
+                <input class="portfolio__check" type="checkbox" value=".construction" id="construction" /><label for="construction">Строительство</label>
+                <input class="portfolio__check" type="checkbox" value=".design" id="design" /><label for="design">дизайн</label>
+                <input class="portfolio__check" type="checkbox" value=".planning" id="planning" /><label for="planning">проектирование</label>
+            </div>
+
+            <div id="container" class="portfolio__box" >
+                <div class="base portfolio__item repair">
+                    <a href="" class="portfolio__wrap">
+                        <div class="image-container">
+                            <img src="./img/portfolio/1.png" alt="">
+                        </div>
+                        
+                        <p class="portfolio__item-title text-30">
+                            Ремонт и дизайн квартиры на Каширском шоссе
+                        </p>
+                    </a>
+                    <div class="portfolio__tegs">
+                        <a href="">Ремонт</a>
+                    </div>
                 </div>
-                <div class="service-main__types">
-                    <h3>Основные виды работ</h3>
-                    <ul class="text-18">
-                        <li>Инженерные работы любой сложности</li>
-                        <li>Возведение фундамента, стен и перекрытий</li>
-                        <li>Согласование проекта в коммунальных службах</li>
-                        <li>Чистовая отделака дома и внутреннего пространства</li>
-                        <li>Благоустройство близлежащей территории</li>
-                    </ul>
+                <div class="base portfolio__item repair construction design">
+                    <a href="" class="portfolio__wrap">
+                        <div class="image-container">
+                            <img src="./img/portfolio/2.png" alt="">
+                        </div>
+                        <p class="portfolio__item-title text-30">
+                            Дом из газобетона с двумя балконами
+                        </p>                        
+                    </a>
+                    <div class="portfolio__tegs">
+                        <a href="">Строительство</a>
+                        <a href="">дизайн</a>
+                        <a href="">Ремонт</a>
+                    </div>
                 </div>
+                <div class="base portfolio__item design">
+                    <a href="" class="portfolio__wrap">
+                        <div class="image-container">
+                            <img src="./img/portfolio/3.png" alt="">
+                        </div>
+                        
+                        <p class="portfolio__item-title text-30">
+                            Дизайн гостиной комнаты в частном доме
+                        </p>
+                    </a>
+                    <div class="portfolio__tegs">
+                        <a href="">дизайн</a>
+                    </div>
+                </div>
+                <div class="base portfolio__item repair construction">
+                    <a href="" class="portfolio__wrap">
+                        <div class="image-container">
+                            <img src="./img/portfolio/4.png" alt="">
+                        </div>
+                        
+                        <p class="portfolio__item-title text-30">
+                            3-х комнатная квартира в Люберцах
+                        </p>
+                    </a>
+                    <div class="portfolio__tegs">
+                        <a href="">Ремонт</a>
+                        <a href="">Строительство</a>
+                    </div>
+                </div>
+                <div class="base portfolio__item construction">
+                    <a href="" class="portfolio__wrap">
+                        <div class="image-container">
+                            <img src="./img/portfolio/5.png" alt="">
+                        </div>
+                        
+                        <p class="portfolio__item-title text-30">
+                            Ремонт квартиры в ЖК Пресня Сити
+                        </p>
+                    </a>
+                    <div class="portfolio__tegs">
+                        <a href="">Строительство</a>
+                    </div>
+                </div>
+                <div class="base portfolio__item design repair">
+                    <a href="" class="portfolio__wrap">
+                        <div class="image-container">
+                            <img src="./img/portfolio/6.png" alt="">
+                        </div>
+                        
+                        <p class="portfolio__item-title text-30">
+                            Ремонт квартиры в Некрасовке
+                        </p>
+                    </a>
+                    <div class="portfolio__tegs">
+                        <a href="">дизайн</a>
+                        <a href="">Ремонт</a>
+                    </div>
+                </div>
+                <div class="base portfolio__item repair">
+                    <a href="" class="portfolio__wrap">
+                        <div class="image-container">
+                            <img src="./img/portfolio/7.png" alt="">
+                        </div>
+                        
+                        <p class="portfolio__item-title text-30">
+                            Дизайн 1-комнатной квартиры в ЖК Искра Парк
+                        </p>
+                    </a>
+                    <div class="portfolio__tegs">
+                        <a href="">Ремонт</a>
+                    </div>
+                </div>
+                <div class="base portfolio__item construction design">
+                    <a href="" class="portfolio__wrap">
+                        <div class="image-container">
+                            <img src="./img/portfolio/8.png" alt="">
+                        </div>
+                        
+                        <p class="portfolio__item-title text-30">
+                            Строительство ленточного Т-образного фундамента
+                        </p>
+                    </a>
+                    <div class="portfolio__tegs">
+                        <a href="">Строительство</a>
+                        <a href="">дизайн</a>
+                    </div>
+                </div>
+                <div class="base portfolio__item design repair">
+                    <a href="" class="portfolio__wrap">
+                        <div class="image-container">
+                            <img src="./img/portfolio/9.png" alt="">
+                        </div>
+                        
+                        <p class="portfolio__item-title text-30">
+                            Дизайн гостиной комнаты в частном доме
+                        </p>
+                    </a>
+                    <div class="portfolio__tegs">
+                        <a href="">дизайн</a>
+                        <a href="">Ремонт</a>
+                    </div>
+                </div>
+                <div class="base portfolio__item repair">
+                    <a href="" class="portfolio__wrap">
+                        <div class="image-container">
+                            <img src="./img/portfolio/10.png" alt="">
+                        </div>    
+                        
+                        <p class="portfolio__item-title text-30">
+                            Дизайн загородного дома в стиле Кантри
+                        </p>
+                    </a>
+                    <div class="portfolio__tegs">
+                        <a href="">Ремонт</a>
+                    </div>
+                </div>
+                <div class="base portfolio__item construction">
+                    <a href="" class="portfolio__wrap">
+                        <div class="image-container">
+                            <img src="./img/portfolio/11.png" alt="">
+                        </div>
+                        
+                        <p class="portfolio__item-title text-30">
+                            Дом из газобетона с двумя балконами
+                        </p>
+                    </a>
+                    <div class="portfolio__tegs">
+                        <a href="">Строительство</a>
+                    </div>
+                </div>
+                <div class="base portfolio__item design">
+                    <a href="" class="portfolio__wrap">
+                        <div class="image-container">
+                            <img src="./img/portfolio/12.png" alt="">
+                        </div>
+                        
+                        <p class="portfolio__item-title text-30">
+                            Строительство загородного дома на Киевском шоссе
+                        </p>
+                    </a>
+                    <div class="portfolio__tegs">
+                        <a href="">дизайн</a>
+                    </div>
+                </div>
+                <div class="base portfolio__item repair">
+                    <a href="" class="portfolio__wrap">
+                        <div class="image-container">
+                            <img src="./img/portfolio/13.png" alt="">
+                        </div>
+                        
+                        <p class="portfolio__item-title text-30">
+                            Дом из газобетона с отделкой облицовочным кирпичом
+                        </p>
+                    </a>
+                    <div class="portfolio__tegs">
+                        <a href="">Ремонт</a>
+                    </div>
+                </div>
+                <div class="base portfolio__item construction">
+                    <a href="" class="portfolio__wrap">
+                        <div class="image-container">
+                            <img src="./img/portfolio/14.png" alt="">
+                        </div>
+                        
+                        <p class="portfolio__item-title text-30">
+                            Дизайн спальной комнаты в классическом стиле
+                        </p>
+                    </a>
+                    <div class="portfolio__tegs">
+                        <a href="">Строительство</a>
+                    </div>
+                </div>
+                <div class="base portfolio__item design">
+                    <a href="" class="portfolio__wrap">
+                        <div class="image-container">
+                            <img src="./img/portfolio/15.png" alt="">
+                        </div>
+                        
+                        <p class="portfolio__item-title text-30">
+                            Дизайн квартиры в ЖК Эмеральд
+                        </p>
+                    </a>
+                    <div class="portfolio__tegs">
+                        <a href="">дизайн</a>
+                    </div>
+                </div>
+
+                <div class="portfolio__item design more">
+                    <a href="" class="portfolio__wrap">
+                        <div class="image-container">
+                            <img src="./img/portfolio/15.png" alt="">
+                        </div>
+                        
+                        <p class="portfolio__item-title text-30">
+                            16Дизайн квартиры в ЖК Эмеральд
+                        </p>
+                    </a>
+                    <div class="portfolio__tegs">
+                        <a href="">дизайн</a>
+                    </div>
+                </div>
+
+                <div class="portfolio__item design more">
+                    <a href="" class="portfolio__wrap">
+                        <div class="image-container">
+                            <img src="./img/portfolio/15.png" alt="">
+                        </div>
+                        
+                        <p class="portfolio__item-title text-30">
+                            17Дизайн квартиры в ЖК Эмеральд
+                        </p>
+                    </a>
+                    <div class="portfolio__tegs">
+                        <a href="">дизайн</a>
+                    </div>
+                </div>
+
+                <div class="portfolio__item design more">
+                    <a href="" class="portfolio__wrap">
+                        <div class="image-container">
+                            <img src="./img/portfolio/15.png" alt="">
+                        </div>
+                        
+                        <p class="portfolio__item-title text-30">
+                            18Дизайн квартиры в ЖК Эмеральд
+                        </p>
+                    </a>
+                    <div class="portfolio__tegs">
+                        <a href="">дизайн</a>
+                    </div>
+                </div>
+
+
+                <div class="portfolio__item repair construction design more">
+                    <a href="" class="portfolio__wrap">
+                        <div class="image-container">
+                            <img src="./img/portfolio/2.png" alt="">
+                        </div>
+                        
+                        <p class="portfolio__item-title text-30">
+                            19Дом из газобетона с двумя балконами
+                        </p>                        
+                    </a>
+                    <div class="portfolio__tegs">
+                        <a href="">Строительство</a>
+                        <a href="">дизайн</a>
+                        <a href="">Ремонт</a>
+                    </div>
+                </div>
+                <div class="portfolio__item design more">
+                    <a href="" class="portfolio__wrap">
+                        <div class="image-container">
+                            <img src="./img/portfolio/3.png" alt="">
+                        </div>
+                        
+                        <p class="portfolio__item-title text-30">
+                            20Дизайн гостиной комнаты в частном доме
+                        </p>
+                    </a>
+                    <div class="portfolio__tegs">
+                        <a href="">дизайн</a>
+                    </div>
+                </div>
+                <div class="portfolio__item repair construction more">
+                    <a href="" class="portfolio__wrap">
+                        <div class="image-container">
+                            <img src="./img/portfolio/4.png" alt="">
+                        </div>
+                        
+                        <p class="portfolio__item-title text-30">
+                            213-х комнатная квартира в Люберцах
+                        </p>
+                    </a>
+                    <div class="portfolio__tegs">
+                        <a href="">Ремонт</a>
+                        <a href="">Строительство</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="portfolio__btns">
+                <a href="" class="btn-base btn-base--border text--medium">консультация</a>
+                <button id="more" class="btn-base btn-base--black text--medium" data-filter=".more">Смотреть еще</button>
             </div>
         </div>
     </section>
     
-
-    <section class="service-point">
-        <div class="container">
-            <div class="service-point__box">
-                <div class="service-point__content">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="25" cy="25" r="24.5" stroke="#3AAE2A"/>
-                        <path d="M23.976 15.104V12.8H29.052V38H23.868V21.692C23.472 21.8 23.04 21.836 22.5 21.836H18.288V17.552H22.032C23.472 17.552 23.976 16.58 23.976 15.104Z" fill="#45B235"/>
-                    </svg>                        
-                    <h3>
-                        Дом, который построил Dekart
-                    </h3>
-                    <p class="text-18">
-                        Мы точно знаем, как построить надежный, качественный 
-                        и экономичный по энергопотреблению дом. Наши эксперты учитывают и просчитывают полный цикл строительства частного дома, от фундамента до ландшафтных работ, что позволяет прогнозировать результат и избегать неприятных сюрпризов. 
-                        Все этапы строительства отражены и зафиксированы в подробной смете и договоре с указанием точных сроков строительных работ. 
-                        Мы гарантируем высокую надежность и долговечность вашего будущего дома.
-                    </p>
-                </div>
-                <div class="service-point__img">
-                    <img src="./img/service-construction/1.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="service-point revers">
-        <div class="container">
-            <div class="service-point__box">
-                <div class="service-point__img">
-                    <img src="./img/service-construction/2.png" alt="">
-                </div>
-                <div class="service-point__content">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="25" cy="25" r="24.5" stroke="#3AAE2A"/>
-                        <path d="M14.756 36V32.004L24.332 24.084C26.528 22.284 27.896 20.772 27.896 18.72C27.896 16.236 26.276 14.94 23.972 14.94C21.56 14.94 19.904 16.596 19.904 19.332V19.728H14.684V19.008C14.684 14.256 18.248 10.584 24.008 10.584C29.912 10.584 33.116 13.788 33.116 18.504C33.116 22.212 31.1 24.48 27.932 27.036L22.28 31.644H33.26V36H14.756Z" fill="#45B235"/>
-                    </svg>                       
-                    <h3>Материальные ценности</h3>
-                    <p class="text-18">
-                        Дом – это хорошая инвестиция в свое будущее и будущее вашей семьи. Важно, чтобы все составляющие строительства были высокого качества, отвечая требованиям износостойкости 
-                        и экологичности. Одним из наших преимуществ является доскональное знание особенностей материалов, представленных 
-                        на рынке. Мы помогаем избежать ошибок при выборе и сэкономить на стоимости, предоставляя материалы по оптовым ценам. Многолетний опыт позволяет нам гарантировать, что в домах 
-                        от Dekart вы сможете комфортно жить не одно десятилетие. 
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="figures figures--service">
-        <div class="container">
-            <div class="figures__box">
-                <div class="figures__item">
-                    <p class="text-120 figures__figure">250</p>
-                    <p class="text-18 figures__text">
-                        Более 250 успешно реализованных
-                        проектов в сфере жилья
-                    </p>
-                </div>
-                <div class="figures__item">
-                    <p class="text-120 figures__figure">16</p>
-                    <p class="text-18 figures__text">
-                        16 лет на рынке ремонта
-                        и строительства домов
-                    </p>
-                </div>
-                <div class="figures__item">
-                    <p class="text-120 figures__figure">450</p>
-                    <p class="text-18 figures__text">
-                        Более 450 профессиональных 
-                        мастеров с большим опытом работы
-                    </p>
-                </div>
-                <div class="figures__item">
-                    <p class="text-120 figures__figure">4.8</p>
-                    <p class="text-18 figures__text">
-                        Средняя оценка удовлетворенности
-                        наших клиентов
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="service-picture">
-        <div class="container">
-            <img src="./img/service-construction/construct-picture.png" alt="">            
-        </div>
-    </div>
-
-    <section class="service-point">
-        <div class="container">
-            <div class="service-point__box">
-                <div class="service-point__content">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="25" cy="25" r="24.5" stroke="#3AAE2A"/>
-                        <path d="M28.976 23.896C31.676 24.436 33.872 26.2 33.872 29.872C33.872 34.228 30.128 37.216 24.188 37.216C18.248 37.216 14.468 34.192 14.468 28.792H19.616C19.652 31.636 21.704 33.148 24.44 33.148C26.78 33.148 28.616 31.816 28.616 29.548C28.616 27.568 27.14 26.308 24.224 26.308H21.704V22.168H23.936C26.708 22.168 28.112 20.764 28.112 18.784C28.112 16.732 26.384 15.652 24.26 15.652C21.884 15.652 20.048 17.164 19.94 19.504H14.9C14.972 14.788 18.788 11.584 24.296 11.584C29.984 11.584 33.332 14.248 33.332 18.388C33.332 21.412 31.46 23.248 28.976 23.896Z" fill="#45B235"/>
-                    </svg>
-                    <h3>Профессиональный подход</h3>
-                    <p class="text-18">
-                        Каждый сотрудник нашей компании имеет опыт в строительстве частных домов и коттеджей более 10 лет. Мы тщательно подбираем лучших специалистов в своей 
-                        области — проектировщиков, монолитчиков, каменщиков, кровельщиков и других профессионалов, — и постоянно поднимаем общий уровень экспертизы на профильных 
-                        мастер-классах, выставках и дополнительном обучении. Это подтверждают грамоты и дипломы с отраслевых мероприятий.
-                    </p>
-                </div>
-                <div class="service-point__img">
-                    <img src="./img/service-construction/3.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="service-point revers">
-        <div class="container">
-            <div class="service-point__box">
-                <div class="service-point__img">
-                    <img src="./img/service-construction/4.png" alt="">
-                </div>
-                <div class="service-point__content">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="25" cy="25" r="24.5" stroke="#3AAE2A"/>
-                        <path d="M14.396 31.6V27.316L25.628 11.8H31.928V27.28H35.42V31.6H31.928V37H26.852V31.6H14.396ZM26.852 16.948L19.364 27.28H26.852V16.948Z" fill="#45B235"/>
-                    </svg>                        
-                    <h3>Качество превыше всего</h3>
-                    <p class="text-18">
-                        Наши стандарты и процессы строительства домов включают многоступенчатую проверку на каждом этапе работ, учитывая все стандарты ГОСТ и СНиП. 
-                        В Dekart мы пристально следим за качеством на каждом этапе строительства, используя современные технологии, знания экспертов и накопленный опыт. 
-                        Может, поэтому клиенты охотно рекомендуют нас своим друзьям и родственникам.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="practice practice--service">
-        <div class="container">
-            <p class="small-title text-14 text--medium">Наше портфолио</p>
-            <div class="practice__top">
-                <h2>Лучшие проекты</h2> 
-                <a href="" class="practice__btn">все проекты</a>              
-            </div>
-
-            <div class="slider">
-                <div class="slider__item">
-                    <a href="">
-                        <div class="image-container">
-                            <img src="./img/slider/1.png" alt="">
-                        </div>
-                        <h3>Дом из газобетона с отделкой облицовочным кирпичом</h3>
-                    </a>
-                    <a href="" class="slider__btn">Ремонт</a>
-                </div>
-                <div class="slider__item">
-                    <a href="">
-                        <div class="image-container">
-                            <img src="./img/slider/2.png" alt="">
-                        </div>
-                        <h3>Дизайн спальной комнаты в классическом стиле</h3>
-                    </a>
-                    <a href="" class="slider__btn">Строительство</a>
-                </div>
-                <div class="slider__item">
-                    <a href="">
-                        <div class="image-container">
-                            <img src="./img/slider/3.png" alt="">
-                        </div>
-                        <h3>Дизайн квартиры в ЖК Эмеральд</h3>
-                    </a>
-                    <a href="" class="slider__btn">дизайн</a>
-                </div>
-                <div class="slider__item">
-                    <a href="">
-                        <div class="image-container">
-                            <img src="./img/slider/4.png" alt="">
-                        </div>
-                        <h3>Ремонт квартиры в ЖК Пресня Сити</h3>
-                    </a>
-                    <a href="" class="slider__btn">Строительство</a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    
-    <section class="consult consult--service">
+    <section class="consult consult--portfolio">
         <div class="container">
             <div class="consult__box">
                 <p class="consult__title text-14 text--medium">Наши услуги</p>
@@ -434,7 +540,7 @@
                                     l-0.4,2.7h-2.4v7h-2.9v-7h-2.4V13h2.4v-2c0-2.3,1.5-3.6,3.6-3.6c1,0,1.9,0.1,2.2,0.1V9.9z"/>
                                 </svg>
                             </a>
-                        </div>                             
+                        </div>                           
                     </div>
 
                 </div>
@@ -483,7 +589,10 @@
     <script src="./js/down-btn.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/menu.js"></script>
-    <script src="./js/tabs.js"></script>
+    <script src="./js/watch-more.js"></script>
+    <script src="./js/isotope.min.js"></script>
+    <script src="./js/tabs-draft.js"></script>
+    <script src="./js/watch-more.js"></script>
     <script src="./js/form.js"></script>
 </body>
 </html>

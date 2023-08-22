@@ -11,11 +11,16 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-bottom: 10%;
+    padding-bottom: 12.5%;
 }
 
 .footer__box img {
     max-width: 221px;
+    transition: 0.5s;
+}
+
+.footer__box img:hover {
+    opacity: 0.85;
 }
 
 .footer__icons {
@@ -23,20 +28,21 @@
     display: flex;
     justify-content: center; 
     align-items: center;
-    margin-top: 27%;
+    margin-top: 22%;
 }
 
 .footer__icons a {
     display: inline-block;
-    margin-left: 14%;
+    margin-left: 15%;
 }
 
 .footer__icons svg {
     fill:  #7d7e80;
+    transition: 0.3s;
 }
 
 .footer__icons svg:hover {
-    fill: #ffffff;
+    fill: #3aae2a;
 }
 
 .footer__icons img {
@@ -64,7 +70,7 @@
 .footer__title {
     text-transform: uppercase;
     color: #ffffff;
-    margin-bottom: 12%;
+    margin-bottom: 8%;
     letter-spacing: 0.75px;
     margin-top: 2%;
 }
@@ -75,21 +81,32 @@
 
 .footer__group li a {
     color: #7d7e80;
+    transition: 0.3s;
 }
 
 .footer__group li a:hover {
-    color: #ffffff;
+    color: #3aae2a;
 }
 
 .footer__contact-data {
     color: #ffffff;
     white-space: nowrap;
+    transition: 0.3s;
+}
+
+.footer__contact-data:hover {
+    color: #3aae2a;
 }
 
 .footer__contact-adress {
     color: #7d7e80;
     line-height: 24px;
     margin-top: 14%;
+    transition: 0.3s;
+}
+
+.footer__contact-adress:hover {
+    color: #ffffff;
 }
 
 .footer__img-text {
@@ -98,6 +115,7 @@
     line-height: 16px;
     text-transform: uppercase;
     padding-top: 20px;
+    padding-left: 20px;
     letter-spacing: 2.2px;
 }
 
@@ -118,17 +136,19 @@
     text-transform: uppercase;
     font-size: 11px;
     color: #7d7e80;
+    transition: 0.3s;
 }
 
 
 .footer__inf a:hover {
-    color: #ffffff;
+    color: #3aae2a;
 }
 
 .footer__inf-item {
     width: 25%;
     color: #7d7e80;
     letter-spacing: 1.1px;
+    transition: 0.3s;
 }
 
 @media (max-width: 768px) {
@@ -197,6 +217,12 @@
         margin-right: 10px;
         margin-left: 0;
     }
+
+
+    .footer__img-text {
+        padding-left: 0;
+        padding-top: 30px;
+    }
 }
 
 
@@ -207,10 +233,6 @@
 
     .footer__group--center {
         align-items: center;
-    }
-
-    .footer__icons {
-        justify-content: center;
     }
 
     .footer__icons a {

@@ -6,21 +6,22 @@
 .team h2 {
     text-align: center;
     color: #0a0e12;
-    padding-bottom: 40px;
+    padding-bottom: 35px;
+    letter-spacing: 0.7px;
 }
 
 .team__box {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 24%);
+    grid-template-columns: repeat(auto-fill, 23.7%);
     width: 100%;
     justify-content: space-between;
-    row-gap: 58px;
+    row-gap: 53px;
 }
 
 .team__name {
     font-weight: 700;
-    padding-top: 30px;
-    padding-bottom: 5px;
+    padding-top: 25px;
+    letter-spacing: 0.7px;
 }
 
 .team__item img {
@@ -62,6 +63,7 @@
 .company-block__img img {
     object-fit: cover;
     border-radius: 14px;
+    max-height: 568px;
 }
 
 .company-block__content p {
@@ -71,6 +73,7 @@
 
 .company-block__content h2 {
     color: #0a0e12;
+    letter-spacing: 0.7px;
 }
 
 @media (max-width: 1024px) {

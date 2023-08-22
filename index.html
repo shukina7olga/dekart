@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header active">
         <div class="container">
             <div class="header__box">
                 <div class="header__logo-box">
@@ -18,10 +18,10 @@
                 </div>
                 <nav class="header__menu text-15 text--medium">
                     <ul>
-                        <li><a href="./portfolio.html">Портфолио</a></li>
-                        <li><a href="./services.html">Услуги</a></li>
-                        <li><a href="./company.html">Компания</a></li>
-                        <li class=""><a href="./contact.html">Контакты</a></li>
+                        <li class="header__menu-li"><a href="./portfolio.html">Портфолио</a></li>
+                        <li class="header__menu-li"><a href="./services.html">Услуги</a></li>
+                        <li class="header__menu-li"><a href="./company.html">Компания</a></li>
+                        <li class="header__menu-li"><a href="./contact.html">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="header__contacts text--medium">
@@ -89,22 +89,13 @@
             </div>
         </div>
         <span class="main__down-btn">
-            <!-- <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
-            <style type="text/css">
-            .st1{fill:#ffffff;}
-            </style>
-            <path class="st1" d="M2,4.5v3.2c1.2,1.1,7,6.5,7,6.5s5.8-5.4,7-6.5V4.5L9,11L2,4.5z"/>
-            </svg> -->
-
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            viewBox="0 0 17 10" style="enable-background:new 0 0 17 10;" xml:space="preserve">
-            <style type="text/css">
-            .st0{fill:#0A0E12;}
-            </style>
-            <polygon class="st0" points="0,1.5 1.4,0.1 8.4,7 15.6,0.1 17,1.5 8.4,9.9 "/>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="10" viewBox="0 0 17 10">
+                <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="17" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAKCAYAAABSfLWiAAAAfklEQVQokZWSqw6AMAxF9xM4FMEiyTz/vyAwCCQoFF9wSMNIlr3XZGJ3d6dNWwVowAA9oBpOb/9puax8cTSABuuXMCKMwNkACvzJh1qA6CnDDnQeYAKuWCI/kxhva9wckKsHlcZK9kFLDpCC+KA/kr3KTWEGnpqplfahvIigXmgjK1BxWLb6AAAAAElFTkSuQmCC"/>
             </svg>
         </span>
+        <div class="slider-container">
+            <div class="arrow-container"></div>
+        </div>
     </section>
 
     <section class="formula">
@@ -185,12 +176,6 @@
                         <p class="text-50">01</p>
                     </div>
                     <div class="services-card__wrap">
-                        <!-- <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M27 23C27 28.6667 27 34.3333 27 40C25.6667 40 24.3333 40 23 40C23 34.3333 23 28.6667 23 23C24.3333 23 25.6667 23 27 23Z" fill="#45B235"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16 13C20.3333 13 24.6667 13 29 13C29 15.6667 29 18.3333 29 21C26.6667 21 24.3333 21 22 21C21.6667 21 21.3333 21 21 21C21 19.6667 21 18.3333 21 17C18.6667 17 16.3333 17 14 17C14.1596 15.347 14.8263 14.0137 16 13Z" fill="#3EAF2F"/>
-                            <circle cx="25" cy="25" r="24.5" stroke="#3AAE2A"/>
-                            <path d="M28 17.5L33.5 13H34.75V21.5L33.5 21.5L28 17.5Z" fill="#3AAE2A"/>
-                        </svg> -->
                         <svg width="50" height="50" fill="#3DAE2B" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
                         <g><path fill="#3DAE2B" d="M32.9,11l-3.3,3.3V9.9H17.4c-2.6,0-4.6,2.1-4.6,4.6v0.2h7.3v2.5c0,1.2,1,2.3,2.3,2.3h7.2v-4.3l3.3,3.3
@@ -225,14 +210,6 @@
                         <p class="text-50">02</p>
                     </div>
                     <div class="services-card__wrap">
-                        <!-- <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19 19C19 24.6667 19 30.3333 19 36C17.6667 36 16.3333 36 15 36C15 30.3333 15 24.6667 15 19C16.3333 19 17.6667 19 19 19Z" fill="#45B235"/>
-                            <circle cx="25" cy="25" r="24.5" stroke="#3AAE2A"/>
-                            <path d="M10 15H40V19H10V15Z" fill="#45B235"/>
-                            <path d="M15 11H19V15H15V11Z" fill="#45B235"/>
-                            <path d="M33 26H37V30H33V26Z" fill="#45B235"/>
-                            <path d="M33 19H36V23H33V19Z" fill="#45B235"/>
-                        </svg> -->
                         <svg width="50" height="50" fill="#3DAE2B" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"><g><g><g>
                         <path fill="#3DAE2B" d="M25,50C11.2,50,0,38.8,0,25S11.2,0,25,0s25,11.2,25,25S38.8,50,25,50z M25,1.4C12,1.4,1.4,12,1.4,25
@@ -260,20 +237,6 @@
                         <p class="text-50">03</p>
                     </div>
                     <div class="services-card__wrap">
-                        <!-- <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 21C11 26.6667 11 32.3333 11 38C10.3334 38 9.66665 38 9 38C9 32.3333 9 26.6667 9 21C9.66665 21 10.3334 21 11 21Z" fill="#45B235"/>
-                            <circle cx="25" cy="25" r="24.5" stroke="#3AAE2A"/>
-                            <path d="M9 11H32V13H9V11Z" fill="#45B235"/>
-                            <path d="M9 36H32V38H9V36Z" fill="#45B235"/>
-                            <path d="M9 13H11V17H9V13Z" fill="#45B235"/>
-                            <path d="M38 11H40V38H38V11Z" fill="#45B235"/>
-                            <path d="M36 20H38V30H36V20Z" fill="#45B235"/>
-                            <path d="M36 20H38V30H36V20Z" fill="#45B235"/>
-                            <path d="M20 29H22V36H20V29Z" fill="#45B235"/>
-                            <path d="M11 26V24H22V26H11Z" fill="#45B235"/>
-                            <path d="M36 11H38V13H36V11Z" fill="#45B235"/>
-                            <path d="M36 36H38V38H36V36Z" fill="#45B235"/>
-                        </svg> -->
                         <svg width="50" height="50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"><g><g><g>
                         <path fill="#3DAE2B" d="M25,50C11.2,50,0,38.8,0,25S11.2,0,25,0s25,11.2,25,25S38.8,50,25,50z M25,1.4C12,1.4,1.4,12,1.4,25
@@ -308,8 +271,48 @@
                 <h2>Опыт, которым<br>мы гордимся</h2> 
                 <a href="" class="practice__btn">все проекты</a>              
             </div>
+
+            <div class="slider">
+                <div class="slider__item">
+                    <a href="">
+                        <div class="image-container">
+                            <img src="./img/slider/1.png" alt="">
+                        </div>
+                        <h3>Дом из газобетона с отделкой облицовочным кирпичом</h3>
+                    </a>
+                    <a href="" class="slider__btn">Ремонт</a>
+                </div>
+                <div class="slider__item">
+                    <a href="">
+                        <div class="image-container">
+                            <img src="./img/slider/2.png" alt="">
+                        </div>
+                        <h3>Дизайн спальной комнаты в классическом стиле</h3>                        
+                    </a>
+                    <a href="" class="slider__btn">Строительство</a>
+                </div>
+                <div class="slider__item">
+                    <a href="">
+                        <div class="image-container">
+                            <img src="./img/slider/3.png" alt=""> 
+                        </div>
+                        <h3>Дизайн квартиры в ЖК Эмеральд</h3>
+                    </a>
+                    <a href="" class="slider__btn">дизайн</a>
+                </div>
+                <div class="slider__item">
+                    <a href="">
+                        <div class="image-container">
+                            <img src="./img/slider/4.png" alt="">
+                        </div>
+                        <h3>Ремонт квартиры в ЖК Пресня Сити</h3>
+                    </a>
+                    <a href="" class="slider__btn">Строительство</a>
+                </div>
+            </div>
+
         </div>            
-        <div class="practice__box">
+        <!-- <div class="practice__box">
             <div class="slider">
                 <div class="slider__item">
                     <img src="./img/slider/1.png" alt="">
@@ -332,7 +335,7 @@
                     <a href="" class="slider__btn">Строительство</a>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <section class="clients">
@@ -473,29 +476,30 @@
                 <div class="ordering__box-form">
                     <form action="">
                         <div class="ordering__fields">
+                            <label class="text-18 ordering__services-label">Услуга</label>
+                            <div class="ordering__services">
+                                <button class="ordering__services-button">ремонт</button>
+                                <button class="ordering__services-button">строительство</button>
+                                <button class="ordering__services-button">дизайн</button>
+                            </div>
                             <div class="placeholder-container">
                                 <input class="text-18" type="text" placeholder=" ">
-                                <label>Имя*</label>
+                                <label class="text-18">Имя*</label>
+                            </div>
+
+                            <div class="placeholder-container">
+                                <input class="text-18 tel" type="text" placeholder=" ">
+                                <label class="text-18">Телефон*</label>
+                            </div>
+
+                            <div class="placeholder-container">
+                                <input class="text-18 mail" type="text" placeholder=" ">
+                                <label class="text-18">Email*</label>
                             </div>
 
                             <div class="placeholder-container">
                                 <input class="text-18" type="text" placeholder=" ">
-                                <label>Телефон*</label>
-                            </div>
-
-                            <div class="placeholder-container">
-                                <input class="text-18" type="text" placeholder=" ">
-                                <label>Email*</label>
-                            </div>
-                            <select name="" id="" class="text-18">
-                                <option class="text-18" value="">Услуга</option>
-                                <option class="text-18" value="">Услуга1</option>
-                                <option class="text-18" value="">Услуга2</option>
-                            </select>
-
-                            <div class="placeholder-container">
-                                <input class="text-18" type="text" placeholder=" ">
-                                <label>Комментарий</label>
+                                <label class="text-18">Комментарий</label>
                             </div>                           
                         </div>
                         <button class="btn-base btn-base--black" type="submit">отправить</button>
@@ -546,9 +550,9 @@
                     <p class="footer__title text-15 text--medium">контакты</p>
                     <a class="footer__contact-data text-22 text--medium" href="tel:+74955023635">+7 (495) 502 36 35</a>
                     <a class="footer__contact-data text-22 text--medium" href="mailto:info@sk-dekart.ru">info@sk-dekart.ru</a>
-                    <p class="footer__contact-adress text-18">
+                    <a class="footer__contact-adress text-18" href="https://yandex.ru/maps/-/CXEaYjs" target="_blank">
                         3-е Почтовое отд., 102, ​офис 811 Люберцы, Московская обл.
-                    </p>
+                    </a>
                 </div>
                 <div class="footer__group footer__group--wrap-links">
                     <p class="footer__title text-15 text--medium">Компания</p>
@@ -581,12 +585,12 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>     
+    <script src="./js/jquery.min.js"></script>     
     <script src="./js/slick.min.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/down-btn.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/menu.js"></script>
-    
+    <script src="./js/form.js"></script>
 </body>
 </html>

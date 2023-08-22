@@ -3,22 +3,42 @@ document.querySelector('.burger').addEventListener('click', function() {
     document.querySelector('.header').classList.toggle('open');
 })
 
+let lastScroll = 0;
+const defaultOffset = 50;
+const header = document.querySelector('.header');
 
-function menu() {
-    const header = document.querySelector(".header");
-    // if (window.pageYOffset == 0) {
-    //     header.style.top = "20px";
-    //     header.style.display = "block";
-    // } else {
-    //     header.style.display = "none";
-    // }
+const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop; // оределяет где находимся
+const containHide = () => header.classList.contains('active');  // есть ли класс
 
-    if (window.pageYOffset == 0) {
+window.addEventListener('scroll', () => {
+    if(scrollPosition() < lastScroll && !containHide()) {
         header.classList.add('active');
-    } else {
+        // header.style.top = "0";
+    } else if(scrollPosition() > lastScroll && containHide() && scrollPosition() > defaultOffset){
         header.classList.remove('active');
+    } else if(scrollPosition() < defaultOffset) {
+        header.style.top = "20px";
     }
-    setTimeout(menu, 0);
-  }
-  
-  menu();
+
+    lastScroll = scrollPosition();
+})
+
+const headerMenu = document.querySelector('.header__menu');
+const headerItems = document.querySelectorAll('.header__menu-li');
+let flag;
+headerMenu.addEventListener('mouseover', () => {
+    headerItems.forEach((item, index) => {
+        if(item.classList.contains('active')) {
+            flag = index;
+            item.classList.remove('active');    
+        } 
+    });
+})
+
+headerMenu.addEventListener('mouseout', () => {
+    headerItems.forEach((item, index) => {
+        if(index == flag) {
+            item.classList.add('active');    
+        } 
+    });
+})

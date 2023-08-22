@@ -37,7 +37,7 @@ $(".document").ready(function() {
     };
 
     $(".main-slider").on("init", function(event, slick) {
-        $(".main-slider").append(sliderCounter);
+        $(".arrow-container").append(sliderCounter);
         updateSliderCounter(slick);
     })
 
@@ -48,6 +48,7 @@ $(".document").ready(function() {
     $(".main-slider").slick({
         dots: false,
         arrows: true,
+        appendArrows: '.arrow-container',
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -68,14 +69,14 @@ $(".document").ready(function() {
 
     $(".slider-comment").slick({
         dots: false,
-        arrows: false,
+        arrows: true,
         infinite: true,
         speed: 500,
         slidesToShow: 2,
         slidesToScroll: 1, 
         // autoplay: true,
         // autoplaySpeed: 2000,
-        // variableWidth: true,
+        variableWidth: true,
         responsive: [
             {
                 breakpoint: 768,

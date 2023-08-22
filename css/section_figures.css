@@ -1,6 +1,6 @@
 .figures {
     padding-top: 135px;
-    padding-bottom: 125px;
+    padding-bottom: 105px;
 }
 
 .figures--black {
@@ -27,7 +27,8 @@
 }
 
 .figures.figures--service {
-    padding-top: 100px;
+    padding-top: 85px;
+    padding-bottom: 112px;
 }
 
 
@@ -56,6 +57,7 @@
 
     .figures.figures--service {
         padding-top: 40px;
+        padding-bottom: 40px;
     }
 }
 

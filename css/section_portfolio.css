@@ -1,6 +1,64 @@
+.portfolio__tabs input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.portfolio__tabs label, .portfolio__reset {
+    display: inline-block;
+    border-radius: 30px;
+    border: 1px solid #ccd1d3;
+    background-color: transparent;
+    padding: 11px 38px;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    color: #0a0e12;
+    margin-bottom: 10px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.portfolio__reset {
+    padding: 12.5px 38px;
+}
+
+.portfolio__reset:hover {
+    border: 1px solid #25292d;
+}
+
+.portfolio__tabs label:hover {
+    border: 1px solid #25292d;
+}
+
+input[type="checkbox"]:checked+label {
+    border: 1px solid #0a0e12;
+    background-color: #0a0e12;
+    color: #ffffff;
+}
+
+.portfolio__reset.active {
+    border: 1px solid #0a0e12;
+    background-color: #0a0e12;
+    color: #ffffff;
+}
+
+
+
+
 .portfolio {
     padding-top: 219px;
     padding-bottom: 140px;
+}
+
+.portfolio__item {
+    display: none;
+}
+
+.portfolio__item.is-visible {
+    display: block;
+}
+
+.portfolio__item.more {
+    display: none;
 }
 
 .portfolio h1 {
@@ -10,19 +68,20 @@
 
 .portfolio__box {
     display: block;
-    /* grid-template-columns: repeat(auto-fill, 32%); */
     width: 100%;
-    /* justify-content: space-between; */
-    /* row-gap: 60px; */
-    /* margin-top: 50px; */
 }
 
 .portfolio__item  {
+    display: none;
     width: 33.3%;
     padding-top: 60px;
     padding-right: 15px;
     padding-left: 15px;
 } 
+
+.portfolio__item.is-visible {
+    display: block;
+}
 
 .portfolio__item img {
     border-radius: 14px;
@@ -30,15 +89,29 @@
     object-fit: cover;
 } 
 
-.portfolio__item img:hover {
+/* .portfolio__item img:hover {
     box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+} */
+
+.image-container {
+    border-radius: 14px;
+    overflow: hidden;
 }
+
+.image-container img {
+    transition: transform 0.3s ease-in-out; 
+}
+
+.image-container:hover img {
+    transform: scale(1.2); 
+}  
 
 .portfolio__item-title {
     display: block;
     color: #0a0e12;
     width: 95%;
     padding-top: 8%;
+    transition: 0.3s;
 }
 
 .portfolio__item-title:hover {
@@ -62,6 +135,13 @@
     background-color: transparent;
     margin-right: 10px;
     margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.portfolio__tegs a:hover {
+    color: #ffffff;
+    background-color: #0a0e12;
+    border: 1px solid #0a0e12;
 }
 
 .portfolio__btns {
@@ -88,19 +168,19 @@
 }
 
 .portfolio__tab:hover {
-    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    border: 1px solid #25292d;
 }
 
 .portfolio__tab.active {
     border: 1px solid #0a0e12;
     background-color: #0a0e12;
-    color: #3aae2a;
+    color: #ffffff;
 }
 
 .portfolio__tab.all {
-    border: 1px solid #0a0e12;
+    /* border: 1px solid #0a0e12;
     background-color: #0a0e12;
-    color: #3aae2a;
+    color: #ffffff; */
 }
 
 

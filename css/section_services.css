@@ -29,7 +29,7 @@
 }
 
 .services-card {
-    border-radius: 14px;
+    border-radius: 15px;
     margin-top: 115px;
     display: flex;
     overflow: hidden;
@@ -42,7 +42,9 @@
 
 .services-card__num {
     border-radius: 14px 0;
-    padding-top: 10px;
+    /* padding-top: 10px; */
+    padding-top: 14px;
+    padding-bottom: 7px;
     color: #ffffff;
     background-color: #3aae2a;
     margin-right: auto;
@@ -52,6 +54,7 @@
 
 .services-card__num p {
     color: #ffffff;
+    line-height: 1;
 }
 
 .services-card.revers .services-card__num {

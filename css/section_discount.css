@@ -9,8 +9,12 @@
     display: flex;
 }
 
-.discount__content, .discount__img {
-    width: 50%;
+.discount__content {
+    width: 51%;
+}
+
+.discount__img {
+    width: 49%;
 }
 
 .discount__content {
@@ -21,6 +25,7 @@
 }
 
 .discount__img img {
+    max-height: 568px;
     object-fit: cover;
     height: 100%;
 }
@@ -41,18 +46,19 @@
 .discount__title {
     font-weight: 700;
     color: #0a0e12;
-    padding-top: 35px;
+    padding-top: 30px;
+    letter-spacing: 0.7px;
     width: 90%;
 }
 
 .discount__text {
     color: #25292d;
-    padding-top: 30px;
+    padding-top: 18px;
     width: 85%;
 }
 
 .discount__btn {
-    margin: 45px 0;
+    margin: 40px 0;
 }
 
 .discount__note {
