@@ -116,7 +116,7 @@
     }
 
     .services-card__wrap {
-        padding-left: 5%;
+        padding-left: 4%;
     }
 
     .services-card {
@@ -136,63 +136,100 @@
     }
 
     .services__banner {
-        margin-bottom: 30px;
+        height: 260px;
+        margin-bottom: 35px;
+    }
+
+    .container.banner {
+        width: 100%;
+    }
+
+    .services__banner img {
+        object-fit: cover;
+        height: 100%;
+        border-radius: 0;
     }
     
     .services__desc {
         flex-direction: column;
+        padding-bottom: 0;
     }
 
     .services__title, .services__text {
         width: 100%;
     }
 
+    .services__title {
+        font-size: 36px;
+    }
+
+    .services__text {
+        margin-top: 12px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
     .services-card {
-        flex-direction: column;
+        flex-direction: column-reverse;
         border-radius: 14px;
+        margin-top: 40px;
+        position: relative;
     }
 
     .services-card.revers {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .services-card__content, .services-card__img {
         width: 100%;
     }
 
-    .services-card__btns .btn-base:first-child {
-        margin-right: 3px;
+    .services-card__img {
+        height: 268px;
+    }
+
+    .services-card__btns .btn-base {
+        width: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .services-card__num {
-        padding-top: 5px;
+        padding-top: 10px;
+        position: absolute;
+        top: 0;
+        width: 80px;
     }
 
-    .services-card {
-        margin-top: 40px;
+    .services-card__num p {
+        font-size: 40px;
     }
-}
 
-
-@media (max-width: 375px) {
     .services-card__btns {
         display: flex;
-        flex-direction: column;
-        width: 80%;
-    }
-
-    .services-card__btns .btn-base:first-child {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-
-    .services-card__btns .btn-base  {
-        display: flex;
-        justify-content: center;
+        flex-direction: row;
         align-items: center;
+        margin-top: 30px;
+        margin-bottom: 29px;
+    }
+
+
+    .services-card__wrap h3 {
+        margin-top: 5%;
+        font-size: 30px;
     }
 
     .services-card__wrap p {
-        width: 90%;
+        margin-top: 4%;
+        width: 100%;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .services-card.revers .services-card__num {
+        border-radius: 14px 0;
     }
 }
+
+

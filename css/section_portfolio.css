@@ -1,3 +1,11 @@
+.portfolio__tabs {
+    width: 950px;
+}
+
+.portfolio__tabs-wrap {
+    overflow-x: scroll;
+}
+
 .portfolio__tabs input[type="checkbox"] {
     -webkit-appearance: none;
     appearance: none;
@@ -217,13 +225,13 @@ input[type="checkbox"]:checked+label {
     .portfolio__btns {
         margin-top: 60px;
     }
+
+    .portfolio__tabs {
+        width: 904px;
+    }
 }
 
 @media (max-width: 660px) {
-    .portfolio__box {
-        /* grid-template-columns: repeat(auto-fill, 100%); */
-        /* justify-content: center; */
-    }
     .portfolio__item {
         width: 100%;
         padding-right: 0;
@@ -244,5 +252,13 @@ input[type="checkbox"]:checked+label {
         align-items: center;
         margin-right: 0;
         margin-bottom: 10px;
+    }
+
+    .portfolio__tabs {
+        width: 880px;
+    }
+
+    .image-container {
+        border-radius: 10px;
     }
 }

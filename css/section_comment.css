@@ -126,6 +126,14 @@
     .slider-comment__item {
         width: 520px;
     }
+
+    .slider-comment .slick-arrow.slick-next {
+        right: 0;
+    }
+
+    .slider-comment .slick-arrow.slick-prev {
+        left: 0;
+    }
 }
 
 
@@ -139,6 +147,16 @@
     }
 }
 
+
+@media (max-width: 425px) { 
+    .slider-comment__item {
+        width: 300px;
+    }
+
+    .comment__text {
+        font-size: 20px;
+    }
+}
 
 @media (max-width: 375px) { 
     .slider-comment__item {

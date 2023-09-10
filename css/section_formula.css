@@ -49,7 +49,8 @@
 
 @media (max-width: 768px) {
     .formula {
-        padding: 50px 0;
+        padding-top: 40px;
+        padding-bottom: 13px;
     }
 
     .formula__box {
@@ -62,9 +63,26 @@
 
     .formula__inf h2 {
         width: 100%;
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 40px;
     }
 
     .formula__img img {
-        height: 200px;
+        height: 245px;
+        border-radius: 5px;
+    }
+
+    .formula__inf {
+       padding: 11% 0;
+    }
+
+    .formula__inf p {
+        font-size: 17px;
+        margin-top: 17px;
+    }
+
+    .formula .btn-base {
+        margin-top: 33px;
     }
 }

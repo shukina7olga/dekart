@@ -9,13 +9,9 @@
 
 .footer__box {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding-bottom: 12.5%;
-}
-
-.footer__group-wrap {
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
 }
 
 .footer__box img {
@@ -55,9 +51,10 @@
 }
 
 .footer__group {
+    width: 25%;
     display: flex;
     flex-direction: column;
-    width: 45%;
+    padding-right: 5%;
 }
 
 .footer__group--center {
@@ -154,21 +151,6 @@
     transition: 0.3s;
 }
 
-@media (max-width: 1024px) {
-    .footer__group-wrap {
-        justify-content: space-between;
-        width: 50%;
-    }
-
-    .footer__box {
-        justify-content: space-between;
-    }
-
-    .footer__group {
-        margin-right: 25px;
-    }
-}
-
 @media (max-width: 768px) {
     .footer {
         padding-top: 30px;
@@ -202,6 +184,10 @@
         height: 30px;
     }
 
+    .footer__group {
+        width: 50%;
+    }
+
     .footer__group--wrap-links {
         margin-top: 30px;
     }
@@ -225,7 +211,6 @@
 
     .footer__icons {
         justify-content: flex-start;
-        margin-left: 25%;
     }
 
     .footer__icons a {
@@ -235,16 +220,8 @@
 
 
     .footer__img-text {
-        padding-left: 26%;
+        padding-left: 0;
         padding-top: 30px;
-    }
-
-    .footer__box {
-        flex-direction: column;
-    }
-
-    .footer__group-wrap {
-        width: 100%;
     }
 }
 
@@ -274,7 +251,6 @@
 
     .footer__icons {
         justify-content: center;
-        margin-left: 12px;
     }  
 
     .footer__title {
@@ -286,35 +262,5 @@
     .footer__contact-data {
         letter-spacing: 0.5px;
         font-size: 21px;
-    }
-
-
-    .footer__group-wrap.footer__group-top {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .footer__contact-adress {
-        font-size: 18px;
-    }
-
-    .footer__group--wrap-links {
-        margin-top: 46px;
-    }
-
-    .footer__group li a {
-        font-size: 18px;
-    }
-
-    .footer__box {
-        padding-bottom: 60px;
-    }
-
-    .footer__inf-item:nth-child(2) {
-        display: none;
-    }
-
-    .footer__inf-item:nth-child(3) {
-        display: none;
     }
 }

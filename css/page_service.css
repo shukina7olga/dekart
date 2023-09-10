@@ -162,6 +162,24 @@
 }
 
 @media (max-width: 768px) {
+    .service-baner {
+        padding: 0;
+        margin-top: 120px;
+        margin-bottom: 40px;
+    }  
+    
+    .service-baner .container {
+        width: 100%;
+    }
+    
+    .service-baner img {
+        object-fit: cover;
+        height: 100%;
+        border-radius: 0;
+        height: 260px;
+    }
+
+
     .service-point__box {
         flex-direction: column;
     }
@@ -225,6 +243,8 @@
     .service-main ul {
         width: 100%;
     }
+
+
 }
 
 

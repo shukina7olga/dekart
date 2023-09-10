@@ -92,15 +92,51 @@
 
 @media (max-width: 768px) { 
     .clients {
-        padding: 50px 0;
+        padding-top: 85px;
+        padding-bottom: 60px;
     }
 
     .clients-figure span {
         margin-right: 0;
     }
 
+    .clients-figure .running span {
+        font-size: 90px;
+    }
+
+    .clients-figure span:nth-child(3) {
+        margin-left: 10px;
+    }
+
+    .clients-figure span sup {
+        font-size: 15px;
+    }
+
+    .clients-figure .text-30 {
+        font-size: 23px;
+    }
+
     .clients.practice--service {
         padding-bottom: 30px;
         padding-top: 40px;
+    }
+
+    .clients__text br {
+        display: none;
+    }
+
+    .clients__text {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bolder;
+        margin-top: 5px;
+        width: 87%;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 24px;
+    }
+
+    .logo {
+        padding-top: 42px;
     }
 }

@@ -45,8 +45,8 @@
 
 @media (max-width: 768px) {
     .figures {
-        padding-top: 60px;
-        padding-bottom: 40px;
+        padding-top: 45px;
+        padding-bottom: 3px;
     }
 
 
@@ -59,6 +59,20 @@
         padding-top: 40px;
         padding-bottom: 40px;
     }
+
+    .figures__figure {
+        font-size: 100px;
+        line-height: 1;
+    }
+
+    .figures__item {
+        width: 100%;
+    }
+
+    .figures__text {
+        font-size: 18px;
+        font-weight: 600;
+    }
 }
 
 
@@ -68,7 +82,10 @@
     }
 
     .figures__item {
-        width: 65%;
-        margin-bottom: 20px;
+        margin-bottom: 35px;
+    }
+
+    .figures__text {
+        margin-top: -2px;
     }
 }

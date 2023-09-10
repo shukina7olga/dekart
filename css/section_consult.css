@@ -60,6 +60,10 @@
     padding-bottom: 140px;
 }
 
+.consult__slogan br {
+    display: none;
+}
+
 @media (max-width: 1024px) { 
     .consult {
         padding: 70px 0;
@@ -77,19 +81,24 @@
 
 @media (max-width: 768px) { 
     .consult {
-        padding: 40px 0;
+        padding-bottom: 40px;
+        padding-top: 35px;
     }
 
     .consult__box {
-        width: 90%;
+        width: 100%;
     }
 
     .consult__text {
-        padding: 25px 12%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 8px;
+        font-size: 18px;
+        line-height: 25px;
     }
 
     .consult__slogan {
-        padding-top: 25px;
+        padding-top: 20px;
     }
 
     .consult__btns {
@@ -102,17 +111,16 @@
 
     .consult__btns .btn-base {
         margin-left: 0;
-        margin-top: 10px;
+        margin-top: 17px;
     }
-
-    .services-card__img img {
-        border-radius: 0 0 10px 10px;
-    }
-
-
 
     .consult-block {
         padding-bottom: 40px;
+    }
+
+    .consult__title {
+        font-size: 14px;
+        font-weight: 600;
     }
 }
 
@@ -120,7 +128,12 @@
     .consult__btns {
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 220px;
         margin: 0 auto;
+    }
+
+    
+    .consult__slogan br {
+        display: inherit;
     }
 }

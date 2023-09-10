@@ -4,6 +4,7 @@
 
 body {
     font-family: 'Aeonik Pro Regular';
+    overflow-x: hidden;
 }
 
 img {
@@ -313,12 +314,29 @@ h3 { /* 30 */
 
 
 @media (max-width: 768px) { 
+    .container {
+        width: 91%;
+    }
+
     .small-title {
         padding-bottom: 20px;
     }
 
     .btn-base {
-        letter-spacing: 0;
+        padding: 15px 40px;
+    }
+
+    .small-title {
+        font-size: 14px;
+        font-weight: bolder;
+    }
+
+    .placeholder-container label {
+        font-size: 18px;
+    }
+
+    .ordering__fields input, .ordering__fields select {
+        padding-top: 2.1rem;
     }
 
     h1 {
